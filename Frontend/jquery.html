@@ -13,7 +13,7 @@
     <section>
         <nav class="navbar bg-body-tertiary fixed-top">
             <div class="container-fluid">
-                <a href="index.html"><img src="../img/logo.svg" alt="WebDev"></a>
+                <a href="../index.html"><img src="../img/logo.svg" alt="WebDev"></a>
                 <h1 id="header">Главная</h1>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
               <span class="navbar-toggler-icon"></span>
@@ -36,9 +36,9 @@
                   <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                       <ul>
-                        <li><a href="VS code/vscode.html">О программе</a></li>
-                        <li><a href="VS code/git.html">Git</a></li>
-                        <li><a href="VS code/plugins.html">Плагины</a></li>
+                        <li><a href="../VS code/vscode.html">О программе</a></li>
+                        <li><a href="../VS code/git.html">Git</a></li>
+                        <li><a href="../VS code/plugins.html">Плагины</a></li>
                       </ul>
                     </div>
                   </div>
@@ -53,11 +53,11 @@
                   <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                       <ul>
-                        <li><a href="Frontend/jquery.html">jQuery</a></li>
-                        <li><a href="Frontend/react.html">React.js</a></li>
-                        <li><a href="Frontend/vue.html">Vue.js</a></li>
-                        <li><a href="Frontend/angular.html">Angular</a></li>
-                        <li><a href="Frontend/preprocessors.html">Препроцессоры</a></li>
+                        <li><a href="#">jQuery</a></li>
+                        <li><a href="react.html">React.js</a></li>
+                        <li><a href="vue.html">Vue.js</a></li>
+                        <li><a href="angular.html">Angular</a></li>
+                        <li><a href="preprocessors.html">Препроцессоры</a></li>
                       </ul>
                     </div>
                   </div>
@@ -72,10 +72,10 @@
                   <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                       <ul>
-                        <li><a href="Backend/ospanel.html">Open Server Panel</a></li>
-                        <li><a href="Backend/laravel.html">Laravel</a></li>
-                        <li><a href="Backend/jango.html">Django</a></li>
-                        <li><a href="Backend/node.html">Node.js</a></li>
+                        <li><a href="../Backend/ospanel.html">Open Server Panel</a></li>
+                        <li><a href="../Backend/laravel.html">Laravel</a></li>
+                        <li><a href="../Backend/jango.html">Django</a></li>
+                        <li><a href="../Backend/node.html">Node.js</a></li>
                       </ul>
                     </div>
                   </div>
@@ -124,7 +124,54 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-12"></div>
+          <div class="col-12">
+            <p>Подключение jQuery к странице осуществляется также как и любого другого JavaScript файла. Т.е. посредством добавления в HTML тега &lt;script&gt; с атрибутом src, в котором необходимо задать полный или относительный путь к файлу.<br>
+            Подключение последней версии jQuery: <br>
+            <code>
+              &lt;script src="/assets/js/jquery-3.5.1.min.js"&gt;&lt;script&gt;
+            </code> <br>
+            При этом разместить &lt;script&gt; можно как секции в &lt;head&gt;, так и в &lt;body&gt;. Но где же лучше? <br>
+            Раньше (до появления режимов async и defer) это рекомендовалось делать перед закрывающим тегом body: <br>
+            <code>
+              ... <br>
+              &lt;script src="/assets/js/jquery-3.5.1.min.js"&gt;&lt;script&gt; <br>
+              &lt;body&gt; <br>
+              &lt;html&gt; <br>              
+            </code>
+            </p>
+            <p>При таком размещении скрипт не будет блокировать парсинг веб-страницы, т.к. его загрузка и выполнение будет осуществляться в самом конце. В результате, это приведёт к тому, что пользователь увидит содержимое страницы быстрее и сможет раньше с ней начать взаимодействовать.
+            </p>
+            <p>Если бы мы сделали это по-другому, например, поместили script в раздел head, то создали бы «задержку» при обработке страницы в самом её начале. А это привело бы к тому, что пользователю пришлось бы дольше ждать отображения контента страницы.</p>
+            <p>Но сейчас так делать не рекомендуется. Лучше размещать скрипты как можно выше (в разделе &lt;head&gt;) с добавлением к ним атрибута defer или async. Эти атрибуты будут сообщать браузеру, что скрипт нужно загрузить в фоне, не останавливая при этом основной поток обработки страницы. Это позволит сделать сайт более производительным.</p>
+            <code>
+              ... <br>
+              отложенная загрузка библиотеки jQuery <br>
+              &lt;script defer src="/assets/js/jquery-3.5.1.min.js"&gt;&lt;script&gt; <br>
+              ... <br>
+            &lt;head&gt; <br>
+            ...  <br>           
+            </code>
+            <p>Использовать атрибут async применительно к jQuery не имеет смысла, т.к. эту библиотеку мы в основном используем для изменения DOM. Но перед тем, как править DOM, он должен быть построен. Это сделать нам поможет использование атрибута defer. Атрибут defer гарантирует что скрипт выполниться только после того, как дерево DOM будет построено, но до события DOMContentLoaded.</p>
+            <p>При этом, если на странице имеется несколько внешних скриптов с атрибутом defer, то они будут выполняться строго в том порядке, в котором они расположены в коде. <br>
+            Пример отложенного подключения jQuery и своего внешнего скрипта, зависящего от этой библиотеки:</p>
+          </div>
+          <code>
+            сначала выполнится jQuery <br>
+            &lt;script defer src="/assets/js/jquery-3.5.1.min.js"&gt;&lt;script&gt; <br>
+            после jQuery свой скрипт, зависящий от jQuery <br>
+            &lt;script defer src="/assets/js/main.min.js"&gt;&lt;script&gt; <br>
+          </code>
+          <p>При непосредственном размещении JavaScript кода в HTML документе его необходимо поместить в обработчик события DOMContentLoaded (в этом случае его код выполнится после загрузки библиотеки jQuery):</p>
+          <code>
+            &lt;script&gt; <br>
+              document.addEventListener('DOMContentLoaded', function() { <br>  
+                 код, зависящий от jQuery <br>
+                ...  <br>
+              });  <br>
+            &lt;script&gt;  <br>
+            отложенная загрузка jQuery  <br>
+            &lt;script defer src="/assets/js/jquery-3.5.1.min.js">&lt;script&gt;           
+          </code>
         </div>
         <div class="row">
           <div class="col-12"></div>
