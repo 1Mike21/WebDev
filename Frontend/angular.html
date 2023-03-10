@@ -115,7 +115,7 @@
     </div>
     <div class="row">
       <div class="col-12">
-        <p>Angular - популярная платформа веб-разработки, разработанная и поддерживаемая Google. Angular использует TypeScript в качестве основного языка программирования. Редактор кода Visual Studio поддерживает TypeScript IntelliSense и навигацию по коду "из коробки", поэтому вы можете выполнять разработку Angular без установки какого-либо другого расширения. Ознакомиться с Visual Studio Code можете здесь.</p>
+        <p>Angular - популярная платформа веб-разработки, разработанная и поддерживаемая Google. Angular использует TypeScript в качестве основного языка программирования. Редактор кода Visual Studio поддерживает TypeScript IntelliSense и навигацию по коду "из коробки", поэтому вы можете выполнять разработку Angular без установки какого-либо другого расширения. Ознакомиться с Visual Studio Code можете <a href="../VS code/vscode.html">здесь</a></p>
       </div>
     </div>
     <div class="row">
@@ -210,7 +210,34 @@
         <p>Писать на Angular можно и на чистом JavaScript, и на других его вариациях. Но так как TypeScript является основным для фреймворка, должна быть возможность с ним работать.</p>
       </div>
     </div>
-    
+    <div class="row">
+      <div class="col-12">
+        <h2>Установка Angular</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <p>Для установки и использования интерфейса командной строки, а также для запуска сервера приложений Angular вам потребуется Node.js. Среда выполнения JavaScript и npm (the Node.js менеджер пакетов) установлен. npm включен в Node.js который вы можете установить с Node.js загрузки. Ознакомиться с Node.js можете <a href="../Backend/node.html">здесь</a></p>
+        <p>Чтобы проверить, что у вас есть Node.js и npm, правильно установленный на вашем компьютере, вы можете ввести <font color="OrangeRed">node --version</font> и <font color="OrangeRed">npm --version</font>.</p>
+        <p>Чтобы установить Angular CLI, введите в терминале или командной строке:</p>
+        <code>npm install -g @angular/cli</code>
+        <p>Установка может занять несколько минут. Теперь вы можете создать новое приложение Angular, введя:</p>
+        <code>ng new my-app</code>
+        <p><font color="OrangeRed">my-app</font> это имя папки для вашего приложения. <font color="OrangeRed">ng new</font> Команда предложит вам указать параметры для созданного приложения. Примите значения по умолчанию, нажав клавишу Enter. Создание приложения Angular в TypeScript и установка его зависимостей может занять несколько минут.</p>
+        <p>Давайте быстро запустим наше приложение Angular, перейдя в новую папку и введя <font color="OrangeRed">ng serve</font>, чтобы запустить веб-сервер и открыть приложение в браузере:</p>
+        <code>
+          cd my-app<br>
+          ng serve
+        </code>
+        <p>Вы должны увидеть "Добро пожаловать в приложение !!" на <font color="DodgerBlue">http://localhost:4200</font> в вашем браузере. Мы оставим веб-сервер запущенным, пока будем изучать приложение с помощью VS Code.</p>
+        <p>Чтобы открыть приложение Angular в VS Code, откройте другой терминал (или командную строку), перейдите к <font color="OrangeRed">my-app</font> папке и введите <font color="OrangeRed">code .</font>:</p>
+        <code>
+          cd my-app<br>
+          code .
+        </code>
+      </div>
+    </div>
+
 
   </div>
 </div>
