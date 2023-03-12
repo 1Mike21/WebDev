@@ -13,7 +13,7 @@
     <section>
         <nav class="navbar bg-body-tertiary fixed-top">
             <div class="container-fluid">
-                <a href="index.html"><img src="img/logo.svg" alt="WebDev"></a>
+                <a href="../index.html"><img src="../img/logo.svg" alt="WebDev"></a>
                 <h1 id="header">Главная</h1>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
               <span class="navbar-toggler-icon"></span>
@@ -36,9 +36,9 @@
                   <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                       <ul>
-                        <li><a href="VS code/vscode.html">О программе</a></li>
-                        <li><a href="VS code/git.html">Git</a></li>
-                        <li><a href="VS code/plugins.html">Плагины</a></li>
+                        <li><a href="../VS code/vscode.html">О программе</a></li>
+                        <li><a href="../VS code/git.html">Git</a></li>
+                        <li><a href="../VS code/plugins.html">Плагины</a></li>
                       </ul>
                     </div>
                   </div>
@@ -53,11 +53,11 @@
                   <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                       <ul>
-                        <li><a href="Frontend/jquery.html">jQuery</a></li>
-                        <li><a href="Frontend/react.html">React.js</a></li>
-                        <li><a href="Frontend/vue.html">Vue.js</a></li>
-                        <li><a href="Frontend/angular.html">Angular</a></li>
-                        <li><a href="Frontend/preprocessors.html">Препроцессоры</a></li>
+                        <li><a href="../Frontend/jquery.html">jQuery</a></li>
+                        <li><a href="../Frontend/react.html">React.js</a></li>
+                        <li><a href="../Frontend/vue.html">Vue.js</a></li>
+                        <li><a href="../Frontend/angular.html">Angular</a></li>
+                        <li><a href="../Frontend/preprocessors.html">Препроцессоры</a></li>
                       </ul>
                     </div>
                   </div>
@@ -72,10 +72,10 @@
                   <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                       <ul>
-                        <li><a href="Backend/ospanel.html">Open Server Panel</a></li>
-                        <li><a href="Backend/laravel.html">Laravel</a></li>
-                        <li><a href="Backend/jango.html">Django</a></li>
-                        <li><a href="Backend/node.html">Node.js</a></li>
+                        <li><a href="ospanel.html">Open Server Panel</a></li>
+                        <li><a href="laravel.html">Laravel</a></li>
+                        <li><a href="django.html">Django</a></li>
+                        <li><a href="#">Node.js</a></li>
                       </ul>
                     </div>
                   </div>
@@ -104,7 +104,101 @@
         </div>
         </div>
     </nav>
-</section>
+    </section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>Что такое Node.js</h2>
+          <img src="../img/Backend/nodejs.jpg" alt="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <p>Node.js – это платформа, основанная на среде выполнения Chrome JavaScript, для простого создания быстрых и масштабируемых сетевых приложений.</p>
+          <p>Платформа Node.js построена на базе JavaScript движка V8 от Google, который используется в браузере Google Chrome и в других браузерах. Это означает, что Node.js пользуется наработками тысяч инженеров, которые сделали среду выполнения JavaScript Chrome невероятно быстрой и продолжают работать в направлении совершенствования V8. Данная платформа, в основном, используется для создания веб-серверов, однако сфера её применения этим не ограничивается.</p>
+          <p>Node.js использует управляемую событиями не блокирующую модель ввода/вывода, которая делает ее легкой и эффективной, идеально подходящей для приложений с интенсивным использованием данных в реальном времени, работающих на распределенных устройствах. Когда Node.js нужно выполнить операцию ввода-вывода, вроде загрузки данных из сети, доступа к базе данных или к файловой системе, вместо того, чтобы заблокировать ожиданием результатов такой операции главный поток, Node.js инициирует её выполнение и продолжает заниматься другими делами до тех пор, пока результаты выполнения этой операции не будут получены.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2>Особенности Node.js</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <ul>
+            <li>Асинхронный и управляемый событиями – все API библиотеки Node.js являются асинхронными, то есть неблокирующими. По сути, это означает, что сервер на базе Node.js никогда не ждет, пока API вернет данные. Сервер переходит к следующему API после его вызова, а механизм уведомления о событиях Node.js помогает серверу получить ответ от предыдущего вызова API.</li>
+            <li>Node.js – это очень быстрая платформа. JavaScript-код, выполняемый в среде Node.js, может быть в два раза быстрее, чем код, написанный на компилируемых языках, вроде C или Java, и на порядки быстрее интерпретируемых языков наподобие Python или Ruby. Причиной подобного является неблокирующая архитектура платформы, а конкретные результаты зависят от используемых тестов производительности.</li>
+            <li>Однопоточный, но очень масштабируемый – Node.js использует однопотоковую модель с зацикливанием событий. Механизм событий помогает серверу реагировать неблокирующим образом и обеспечивает высокую масштабируемость сервера по сравнению с традиционными серверами, которые создают ограниченные потоки для обработки запросов. Node.js использует однопотоковую программу, и та же самая программа может обслуживать гораздо большее количество запросов, чем традиционные серверы, такие как Apache HTTP Server.</li>
+            <li>Без буферизации – приложения Node.js никогда не буферизуют данные. Эти приложения просто выводят данные кусками.</li>
+            <li>Лицензия – Node.js выпущен под лицензией MIT.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2>Где используется Node.js</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <ul>
+            <li>Приложения, связанные с вводом / выводом</li>
+            <li>Приложения для потоковой передачи данных</li>
+            <li>Интенсивное использование данных в реальном времени (DIRT)</li>
+            <li>Приложения на основе JSON API</li>
+            <li>Одностраничные приложения</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2>Установка Node.js</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <p>Node.js можно устанавливать различными способами, которые мы сейчас рассмотрим.</p>
+          <p>
+            Официальные установочные пакеты для всех основных платформ можно найти здесь: <a href="https://nodejs.org/en/download/">https://nodejs.org/en/download/</a>
+          </p>
+          <p>
+            Существует ещё один удобный способ установки Node.js, который заключается в использовании менеджера пакетов, имеющегося в операционной системе.
+          </p>
+          <p>
+            Список менеджеров пакетов для других операционных систем, в том числе — для Linux и Windows, можно найти здесь: <a href="https://nodejs.org/en/download/package-manager/">https://nodejs.org/en/download/package-manager/</a> 
+          </p>
+          <p>Популярным менеджером версий Node.js является nvm. Это средство позволяет удобно переключаться между различными версиями Node.js, с его помощью можно, например, установить и попробовать новую версию Node.js, после чего, при необходимости, вернуться на старую. Nvm пригодится и в ситуации, когда нужно испытать какой-нибудь код на старой версии Node.js.</p>
+          <p>Мы бы посоветовали начинающим пользоваться официальными установщиками Node.js. Пользователям macOS я порекомендовал бы устанавливать Node.js с помощью Homebrew.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2>Преимущества</h2>
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-12 col-md-6">Удобство для построения быстрых приложений</div>
+          <div class="col-12 col-md-6">Высокая пропускная способность</div>
+          <div class="col-12 col-md-6">Легкость и скорость написания</div>
+          <div class="col-12 col-md-6">Активно развивается</div>
+          <div class="col-12 col-md-6">Простота</div>
+          <div class="col-12 col-md-6">Гибкость</div>
+          <div class="col-12 col-md-6">Быстрота</div>
+          <div class="col-12 col-md-6">Ресурсоемкость</div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2>Недостатки</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-4 col-xl-6">Небольшие ограничения в области нагрузки на CPU</div>
+        <div class="col-12 col-md-4 col-xl-6">Плохо выполняет операции генерирования графики и обработки изображений</div>
+        <div class="col-12 col-md-4 col-xl-6">Необходимо постоянно следить за обновлениями</div>
+        <div class="col-12 col-md-4 col-xl-6">Некачественно протестирован</div>
+      </div>
+    </div>
 <footer>
   <h5>&copy WebDev 2023</h5>
 </footer>
