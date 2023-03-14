@@ -1,0 +1,29 @@
+body {
+  background: linear-gradient(180deg, #213FA8 11.43%, #00A3FF 100%) fixed center;
+}
+body .header {
+  background: #263173;
+}
+body .main {
+  margin-top: 300px;
+  text-align: center;
+}
+body .menu {
+  background-color: #263173;
+}
+body .menu h5 {
+  margin: 0 auto;
+}
+body .accordion-item {
+  margin: 0 auto;
+  width: 300px;
+}
+body .accordion-item .accordion-button {
+  background-color: #49A68B;
+  height: 100px;
+  width: 300px;
+}
+body .carousel-inner {
+  width: 700px;
+  height: 700px;
+}

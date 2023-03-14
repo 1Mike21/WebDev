@@ -1,0 +1,42 @@
+$background: linear-gradient(180deg, #213FA8 11.43%, #00A3FF 100%);
+$header:#263173;
+$button:#1D906E;
+$green:#49A68B;
+$darkblue:#1E5F84;
+
+body{
+    background: $background fixed center;
+
+    .header{
+        background: $header;
+    }
+    
+    .main{
+        margin-top: 300px;
+        text-align: center;
+    }
+
+    .menu{
+        background-color: $header;
+
+        h5{
+            margin: 0 auto;
+        }
+    }
+
+    .accordion-item{
+        margin: 0 auto;
+        width: 300px;
+
+        .accordion-button{
+            background-color: $green;
+            height: 100px;
+            width: 300px;
+        }
+    }
+    
+    .carousel-inner{
+        width: 700px;
+        height: 700px;
+    }
+}
