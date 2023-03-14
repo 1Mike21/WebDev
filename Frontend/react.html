@@ -11,100 +11,261 @@
 <body>
     <!-- Шапка сайта -->
     <section>
-        <nav class="navbar bg-body-tertiary fixed-top">
-            <div class="container-fluid">
-                <a href="index.html"><img src="img/logo.svg" alt="WebDev"></a>
-                <h1 id="header">Главная</h1>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Меню</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <!-- Аккордеон -->
-              <div class="accordion" id="accordionExample">
-                <!-- Visual Studio Code -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Visual Studio Code
-                    </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <ul>
-                        <li><a href="VS code/vscode.html">О программе</a></li>
-                        <li><a href="VS code/git.html">Git</a></li>
-                        <li><a href="VS code/plugins.html">Плагины</a></li>
-                      </ul>
-                    </div>
+      <nav class="navbar bg-body-tertiary fixed-top">
+          <div class="container-fluid">
+              <a href="../index.html"><img src="../img/logo.svg" alt="WebDev"></a>
+              <h1 id="header">Главная</h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Меню</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <!-- Аккордеон -->
+            <div class="accordion" id="accordionExample">
+              <!-- Visual Studio Code -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Visual Studio Code
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <ul>
+                      <li><a href="../VS code/vscode.html">О программе</a></li>
+                      <li><a href="../VS code/git.html">Git</a></li>
+                      <li><a href="../VS code/plugins.html">Плагины</a></li>
+                    </ul>
                   </div>
                 </div>
-                <!-- Frontend -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Frontend
-                    </button>
-                  </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <ul>
-                        <li><a href="Frontend/jquery.html">jQuery</a></li>
-                        <li><a href="Frontend/react.html">React.js</a></li>
-                        <li><a href="Frontend/vue.html">Vue.js</a></li>
-                        <li><a href="Frontend/angular.html">Angular</a></li>
-                        <li><a href="Frontend/preprocessors.html">Препроцессоры</a></li>
-                      </ul>
-                    </div>
+              </div>
+              <!-- Frontend -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Frontend
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <ul>
+                      <li><a href="jquery.html">jQuery</a></li>
+                      <li><a href="#">React.js</a></li>
+                      <li><a href="vue.html">Vue.js</a></li>
+                      <li><a href="angular.html">Angular</a></li>
+                      <li><a href="preprocessors.html">Препроцессоры</a></li>
+                    </ul>
                   </div>
                 </div>
-                <!-- Backend -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      Backend
-                    </button>
-                  </h2>
-                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <ul>
-                        <li><a href="Backend/ospanel.html">Open Server Panel</a></li>
-                        <li><a href="Backend/laravel.html">Laravel</a></li>
-                        <li><a href="Backend/django.html">Django</a></li>
-                        <li><a href="Backend/node.html">Node.js</a></li>
-                      </ul>
-                    </div>
+              </div>
+              <!-- Backend -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Backend
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <ul>
+                      <li><a href="../Backend/ospanel.html">Open Server Panel</a></li>
+                      <li><a href="../Backend/laravel.html">Laravel</a></li>
+                      <li><a href="../Backend/jango.html">Django</a></li>
+                      <li><a href="../Backend/node.html">Node.js</a></li>
+                    </ul>
                   </div>
                 </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingFour">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                      Практические задания
-                    </button>
-                  </h2>
-                  <div id="collapse" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <ul>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                      </ul>
-                    </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Практические задания
+                  </button>
+                </h2>
+                <div id="collapse" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <ul>
+                      <li><a href=""></a></li>
+                      <li><a href=""></a></li>
+                      <li><a href=""></a></li>
+                      <li><a href=""></a></li>
+                      <li><a href=""></a></li>
+                      <li><a href=""></a></li>
+                    </ul>
                   </div>
                 </div>
               </div>
             </div>
-        </div>
-        </div>
-    </nav>
+          </div>
+      </div>
+      </div>
+  </nav>
 </section>
+<!-- Раздел с текстом и картинками -->
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>Что такое React.js</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <p>React - библиотека с открытым исходным кодом для разработки пользовательских интерфейсов. Он позволяет создавать сложные пользовательские интерфейсы из небольших и изолированных фрагментов кода, называемых “компонентами”</p>
+        <p>Компонент — это кусочек кода, который отвечает за внешний вид одного из элементов сайта или приложения. Причем такие кусочки-компоненты могут быть вложенными.</p>
+        <p>Состояние — это вся информация об элементе, в том числе о его отображении.</p>
+        <p>React помогает решать проблемы, основываясь на идее декларативного программирования, а не на императивном подходе.</p>
+        <ul>
+          <li>Декларативный подход состоит в описании конечного результата (что мы хотим получить).</li>
+          <li>При императивном подходе описываются конкретные шаги для достижения конечного результата (как мы хотим что-то получить).</li>
+        </ul>
+        <p>React предоставляет два синтаксиса для создания компонентов: классовый и функциональный. Классовый используется редко, так как синтаксис классов часто излишен для описания компонентов.</p>
+        <p>Функциональный компонент в React — это JavaScript-функция, которая на входе получает объект с данными для отрисовки компонента — их называют props, а на выходе возвращает описание интерфейса, который нужно отобразить.</p>
+        <p>Код на React выглядит легче и лаконичнее решения на чистом JS. Мы не описываем, как перерисовывать интерфейс. Вместо этого мы указываем, что нужно отобразить на месте компонента, и используем для этого синтаксис, похожий на HTML. Такой подход позволяет относительно легко решать и более сложные задачи. Например, перерисовать разметку страницы корзины и отобразить на её месте интерфейс страницы заказа.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h2>Основные возможности библиотеки</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <p>React решает проблемы фронтендеров при разработке интерфейсов динамичных сайтов и SPA-приложений. При использовании классической связки JavaScript и HTML перерисовка интерфейса сильно усложняется. React же не ограничивает возможности разработчика, в отличие от любых фреймворков.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h2>Декларативность</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <p>Декларативный стиль означает, что достаточно один раз описать, как будут выглядеть результаты работы кода — элементы в разных состояниях. Ему не нужно фокусироваться на способах достижения результатов: большую часть задач выполнит библиотека. React.js будет автоматически обновлять элементы в зависимости от условий, главная задача — грамотно описать их. Удобный и понятный подход облегчает написание и отладку кода.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h2>Виртуальное DOM-дерево</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <p>Любой веб-интерфейс основан на HTML-документе и CSS-стилях, к которым подключен код на JavaScript. Структура HTML-документа, точнее его модель, называется DOM-деревом (DOM расшифровывается как Document Object Mode, объектная модель документа). Это древовидная модель, в которой в иерархическом виде собраны все используемые на странице элементы.</p>
+        <p>Особенность React в том, что он создает и хранит в кэше виртуальное DOM-дерево — копию DOM, которая изменяется быстрее, чем реальная структура. Это нужно для того, чтобы быстро обновлять страницы. Если пользователь выполнит действие или наступит какое-либо событие, DOM должна измениться, так как изменятся объекты на странице. Но реальная объектная модель может быть огромной, ее обновление — медленный процесс. Поэтому React работает не с ней, а с виртуальной копией в кэше, которая весит меньше.</p>
+        <p>Когда происходит событие, из-за которого код должен обновить объект, изменение быстро отображается в виртуальном DOM. После этого обновляется реальная объектная модель. Для пользователя это значит, что изменения на странице отобразятся мгновенно, а не после долгой загрузки.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+          <h2>Обновление DOM по частям</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <p>Чтобы улучшить быстродействие, React обновляет DOM не полностью. Он хранит в памяти две облегченных копии: актуальную и предыдущую. Когда что-то обновляется, библиотека сравнивает версии между собой и изменяет только ту часть дерева, которая действительно поменялась. Это нужно, чтобы не перезагружать DOM целиком и не замедлять страницу. Подход кажется сложным, но он важен для оптимизации загрузки.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h2>Возможность повторно использовать компоненты</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <p>React основан на компонентах — отдельных элементах веб-интерфейса. Компоненты инкапсулированы, то есть самостоятельны: в каждом из них размещены все необходимые методы и данные. В случае с компонентами React инкапсуляция также означает, что состояние элемента хранится в нем самом, а не в отдельном объекте.</p>
+        <p>Инкапсулированные самостоятельные компоненты можно использовать повторно, размещать в другом месте кода, в ином разделе или на другой странице. Данные можно переносить по всему приложению, использовать вне DOM конкретной страницы. Это ускоряет разработку и сокращает количество действий для создания функционирующего интерфейса. Благодаря отсутствию сложных зависимостей инкапсуляция также облегчает отладку.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h2>Нисходящий поток данных</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <p>Компоненты могут передавать свойства и данные друг другу, но только в одном направлении — от «родительских» к дочерним. Это помогает реализовать четкую иерархию, облегчает отладку. Однонаправленный поток данных означает, что программист всегда может понять, откуда именно к элементу поступили данные.</p>
+        <p>Еще одна особенность потока данных — отсутствие возможности изменять свойства напрямую. Для этого существуют специальные callback-функции. Так называются части исполняемого кода, которые передаются от одного компонента другому в виде параметра функции. Это позволяет поддерживать стабильность: свойства оказываются неизменяемыми после создания, а callback-функция как бы пересоздает их. В результате использования коллбэков поток данных выглядит так: свойства и информация передаются сверху вниз, а события происходят снизу вверх.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h2>Синтаксис JSX</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <p>JSX расшифровывается как JavaScript XML. Это расширение языка JavaScript, которое помогает описывать HTML-подобные элементы с помощью кода на React. С помощью синтаксиса на React создают компоненты страницы и гибко управляют ими.</p>
+        <p>Несмотря на то что элементы похожи на HTML, это по-прежнему язык JavaScript с возможностью быстро и легко изменять DOM с помощью кода. И все же JSX воспроизводится как HTML: по сути разработчик описывает нужный компонент на языке разметки, а тот остается JavaScript-объектом с широкой функциональностью. Это удобно, упрощает программирование, но может запутать начинающих.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h2>React Hooks</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <p>В старых версиях  состояниями можно было управлять с помощью классов — специальных конструкций. Сейчас в React.js есть поддержка хуков — так называются специальные функции-«крючки», которые «цепляются» за состояние элемента или за метод. Изменение состояния или вызов метода «тащит» за собой эти функции, и они автоматически выполняются — это помогает избежать использования классов, облегчает и упрощает написание кода.</p>
+        <p>В React есть встроенные хуки, но разработчик может создавать и собственные — это помогает повторно использовать код и уменьшить его количество.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h2>React Developer Tools</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <p>Так как React.js — очень популярная технология, его создатели разработали бесплатные расширения для браузера с инструментами для проверки и отладки. Фронтендеры часто пользуются консолью и панелью разработчика в браузере, чтобы проверить, как работает их код. React Developer Tools облегчают задачу и расширяют возможности. Например, можно просматривать прямо в браузере компоненты с большим уровнем вложенности и не искать их в коде долгое время. React Developer Tools существуют для новых версий популярных браузеров Firefox и Google Chrome.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h2>Для каких приложений подойдет React</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <ol>
+          <li>Большой или средней сложности — несколько экранов, различные формы, много нестандартных элементов управления.</li>
+          <li>Над которым работает команда программистов — технология поможет быстрее договариваться и лучше поддерживать код.</li>
+          <li>Которые планируют расширять — изолированные компоненты позволяют легко масштабировать логику, использовать уже созданные решения.</li>
+          <li>Которые решили обновить — React можно добавлять в уже существующий проект, обновлять кодовую базу постепенно и точечно.</li>
+        </ol>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h2>Преимущества</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-6 col-xl-4">Масштабируемость</div>
+      <div class="col-12 col-md-6 col-xl-4">Простота</div>
+      <div class="col-12 col-md-6 col-xl-4">Высокая скорость разработки</div>
+      <div class="col-12 col-md-6 col-xl-4">Удобно реализована система компонентов</div>
+      <div class="col-12 col-md-6 col-xl-4">Регулярно поддерживается и обновляется</div>
+      <div class="col-12 col-md-6 col-xl-4">Виртуальная объектная модель документа</div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h2>Недостатки</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-6">Нехватка официальной документации</div>
+      <div class="col-12 col-md-6">Долгое время для освоения</div>
+      <div class="col-12 col-md-6">Сложность поисковой оптимизации</div>
+      <div class="col-12 col-md-6">Запутанный синтаксис JSX</div>
+    </div>
+  </div>
+</section>
+
 <footer>
   <h5>&copy WebDev 2023</h5>
 </footer>
