@@ -5,7 +5,7 @@ body .header {
   background: #263173;
 }
 body .main {
-  margin-top: 300px;
+  margin-top: 200px;
   text-align: center;
 }
 body .menu {
@@ -13,17 +13,64 @@ body .menu {
 }
 body .menu h5 {
   margin: 0 auto;
+  margin-top: 20px;
 }
-body .accordion-item {
+body .menu button {
+  padding-left: 0;
+}
+body .accordion {
+  --bs-accordion-border-color: none;
+  --bs-accordion-btn-focus-border-color: none;
+  --bs-accordion-btn-focus-box-shadow:none;
+}
+body .accordion .accordion-item {
   margin: 0 auto;
   width: 300px;
 }
-body .accordion-item .accordion-button {
+body .accordion .accordion-button {
   background-color: #49A68B;
+  border: 2px solid #1D906E;
   height: 100px;
   width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 10px 16px rgba(0, 0, 0, 0.2);
+}
+body .accordion .accordion-body {
+  background: #1E5F84;
+  padding: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 10px 16px rgba(0, 0, 0, 0.2);
+}
+body .accordion .accordion-body ul {
+  padding-left: 0;
+}
+body .accordion .accordion-body ul li {
+  position: relative;
+  list-style: none;
+  border-bottom: 3px solid #123950;
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  box-shadow: 0 4px rgba(0, 0, 0, 0.2), 0 10px 16px rgba(0, 0, 0, 0.2);
+}
+body .accordion .accordion-body ul li:last-child {
+  border-bottom: none;
+  margin-bottom: -20px;
+}
+body .accordion .accordion-body ul li a {
+  line-height: 50px;
+  text-decoration: none;
+  color: white;
+  width: 300px;
+}
+body .accordion .accordion-body ul li a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 body .carousel-inner {
-  width: 700px;
-  height: 700px;
+  width: 1200px;
+  height: 1000px;
+  margin: 0 auto;
 }
