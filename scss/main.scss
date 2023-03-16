@@ -7,13 +7,14 @@ $white:white;
 
 body{
     background: $background fixed center;
+    height: 50vh;
 
     .header{
         background: $header;
     }
     
     .main{
-        margin-top: 200px;
+        margin-top: 100px;
         text-align: center;
     }
 
@@ -89,8 +90,6 @@ body{
     }
     
     .carousel-inner{
-        width: 1200px;
-        height: 1000px;
-        margin: 0 auto;
+        margin-bottom: 10px;
     }
 }

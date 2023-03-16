@@ -1,11 +1,12 @@
 body {
   background: linear-gradient(180deg, #213FA8 11.43%, #00A3FF 100%) fixed center;
+  height: 50vh;
 }
 body .header {
   background: #263173;
 }
 body .main {
-  margin-top: 200px;
+  margin-top: 100px;
   text-align: center;
 }
 body .menu {
@@ -70,7 +71,5 @@ body .accordion .accordion-body ul li a::before {
   height: 100%;
 }
 body .carousel-inner {
-  width: 1200px;
-  height: 1000px;
-  margin: 0 auto;
+  margin-bottom: 10px;
 }
