@@ -131,6 +131,15 @@ body .main .block {
   height: auto;
   font-size: 20px;
 }
+body .main li {
+  font-size: 25px;
+}
+body .main code {
+  border: 1px solid black;
+  background: white;
+  color: black;
+  padding: 3px;
+}
 body footer {
   background-color: #263173;
   height: 100px;

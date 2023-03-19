@@ -160,6 +160,17 @@ body{
                 height: auto;
                 font-size: 20px;
             }
+            
+            li{
+                font-size: 25px;
+            }
+            
+            code{
+                border: 1px solid black;
+                background: $white;
+                color:black;
+                padding: 3px;
+            }
         }
 
         footer{

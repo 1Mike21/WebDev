@@ -9,105 +9,105 @@
     <title>Инструменты для веб-разработки</title>
 </head>
 <body>
-    <!-- Шапка сайта -->
-    <header>
-        <nav class="navbar bg-body-tertiary fixed-top">
-            <div class="container-fluid">
-                <a href="../index.html"><img src="../img/logo.svg" alt="WebDev"></a>
-                <h1 id="header">Главная</h1>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Меню</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <!-- Аккордеон -->
-              <div class="accordion" id="accordionExample">
-                <!-- Visual Studio Code -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Visual Studio Code
-                    </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <ul>
-                        <li><a href="vscode.html">О программе</a></li>
-                        <li><a href="#">Git</a></li>
-                        <li><a href="plugins.html">Плагины</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <!-- Frontend -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Frontend
-                    </button>
-                  </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <ul>
-                        <li><a href="../Frontend/jquery.html">jQuery</a></li>
-                        <li><a href="../Frontend/react.html">React.js</a></li>
-                        <li><a href="../Frontend/vue.html">Vue.js</a></li>
-                        <li><a href="../Frontend/angular.html">Angular</a></li>
-                        <li><a href="../Frontend/preprocessors.html">Препроцессоры</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <!-- Backend -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      Backend
-                    </button>
-                  </h2>
-                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <ul>
-                        <li><a href="../Backend/ospanel.html">Open Server Panel</a></li>
-                        <li><a href="../Backend/laravel.html">Laravel</a></li>
-                        <li><a href="../Backend/django.html">Django</a></li>
-                        <li><a href="../Backend/node.html">Node.js</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingFour">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                      Практические задания
-                    </button>
-                  </h2>
-                  <div id="collapse" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <ul>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+<!-- Шапка сайта -->
+<header>
+  <nav class="navbar header fixed-top">
+      <div class="container-fluid">
+          <a href="../index.html"><img src="../img/logo.svg" alt="WebDev"></a>
+          <h1 id="header">Система контроля версий Git</h1>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas menu offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Меню</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <!-- Аккордеон -->
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <!-- Visual Studio Code -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                Visual Studio Code
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="../VS code/vscode.html">О программе</a></li>
+                  <li><a href="#">Git</a></li>
+                  <li><a href="../VS code/plugins.html">Плагины</a></li>
+                </ul>
               </div>
             </div>
+          </div>
+          <!-- Frontend -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpenheadingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                Frontend
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="../Frontend/jquery.html">jQuery</a></li>
+                  <li><a href="../Frontend/react.html">React.js</a></li>
+                  <li><a href="../Frontend/vue.html">Vue.js</a></li>
+                  <li><a href="../Frontend/angular.html">Angular</a></li>
+                  <li><a href="../Frontend/preprocessors.html">Препроцессоры</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Backend -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpenheadingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                Backend
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="../Backend/ospanel.html">Open Server Panel</a></li>
+                  <li><a href="../Backend/laravel.html">Laravel</a></li>
+                  <li><a href="../Backend/django.html">Django</a></li>
+                  <li><a href="../Backend/node.html">Node.js</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpenheadingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                Практические задания
+              </button>
+            </h2>
+            <div id="collapse" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+              <div class="accordion-body">
+                <ul>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-        </div>
-    </nav>
-  </header>
+      </div>
+  </div>
+  </div>
+</nav>
+</header>
 <!-- Раздел с текстом и картинками -->
 <main>
-  <div class="container">
+  <div class="container main">
     <div class="row">
       <div class="col-12">
         <h2>Что такое Git?</h2>
@@ -128,9 +128,9 @@
           Зарегистрируемся на сайте <a href="https://github.com/">GitHub</a>  
           Далее мы можем создать свой репозиторий, нажав на + в правом верхнем углу.
         </p>
-        <img src="../img/GitHub/newRepository.png" alt="">
+        <img class="img-fluid" src="../img/GitHub/newRepository.png" alt="">
         <p>Далее выставляем настройки, где указываем название репозитория и делаем его публичным (доступным всем пользователям в интернете) или же приватным (доступным только вам и тем, кому вы дадите доступ).</p> 
-        <img src="../img/GitHub/createRepository.png" alt="">
+        <img class="img-fluid" src="../img/GitHub/createRepository.png" alt="">
       <p>Теперь мы создали наш репозиторий и можем с ним работать</p>
       </div>
     </div>
@@ -142,12 +142,12 @@
     <div class="row">
       <div class="col-12">
         <ol>
-          <li>git init - инициализирован пустой репозиторий</li>
-          <li>git status - текущее состояние локального гит репозитория</li>
-          <li>git add . - добавить все файлы из папки</li>
-          <li>git commit -m - сообщения в кавычках "", которые произошли</li>
-          <li>git remote add origin и ссылка на репозиторий - подключение к репозиторию</li>
-          <li>git push - залить проект в репозиторий</li>
+          <li><code>git init</code> - инициализирован пустой репозиторий</li>
+          <li><code>git status</code> - текущее состояние локального гит репозитория</li>
+          <li><code>git add .</code> - добавить все файлы из папки</li>
+          <li><code>git commit -m</code> - сообщения в кавычках "", которые произошли</li>
+          <li><code>git remote add origin</code> и ссылка на репозиторий - подключение к репозиторию</li>
+          <li><code>git push</code> - залить проект в репозиторий</li>
         </ol>
         <p>
           Во время разработки новой функциональности считается хорошей практикой работать с копией оригинального проекта, которую называют веткой. Ветви имеют свою собственную историю и изолированные друг от друга изменения до тех пор, пока вы не решаете слить изменения вместе. <br> Это происходит по набору причин:
