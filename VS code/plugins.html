@@ -10,7 +10,7 @@
 </head>
 <body>
     <!-- Шапка сайта -->
-    <section>
+    <header>
         <nav class="navbar bg-body-tertiary fixed-top">
             <div class="container-fluid">
                 <a href="../index.html"><img src="../img/logo.svg" alt="WebDev"></a>
@@ -104,9 +104,9 @@
         </div>
         </div>
     </nav>
-</section>
+  </header>
 <!-- Раздел с текстом и картинками -->
-<section>
+<main>
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -209,6 +209,11 @@
     </div>
     <div class="row">
       <div class="col-12">
+        <h2>Сторонние сайты</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
         <h2>Конвертер изображений</h2>
       </div>
     </div>
@@ -217,7 +222,7 @@
         <p>Очень часто при разработке сайтов встречается ситуация, что необходим какой-то конкретный формат изображения. Изменить формат файла можно разными способами, но самый удобный, по нашему мнению, это использование онлайн-конвертеров. <br>
           <a href=" https://image.online-convert.com/ru">Один из таких сайтов:</a>
         </p>
-        <img src="convert_image.png" alt="">
+        <img src="../img/VS code/convert_image.png" alt="">
       </div>
     </div>
     <div class="row">
@@ -274,13 +279,13 @@
           Рассмотрим как использовать иконки на примере сайта Fontello. <br>
           Сервис Fontello действует довольно просто: вы отмечаете символы, которые вам нравятся, и нажимаете кнопку «Download webfont».
         </p>
-        <img src="do" alt="">
+        <img src="../img/VS code/download_webfonts.png" alt="">
         <p>Внутри скачанного архива содержится шрифт fontello в четырёх разных форматах: ttf, svg, eot и  woff. Это гарантирует, что в любом браузере, даже устаревшем, какой-то из них будет обязательно работать.
           Нам требуется две вещи: папка font целиком, она, напомню, хранит четыре шрифтовых файла в разном формате, и коды символов. Их можно посмотреть в файле fontello.css или на сайте во вкладке «Customize Codes».
         </p>
-        <img src="customize_codes.png" alt="">
+        <img src="../img/VS code/customize_codes.png" alt="">
         <p>На вкладке Customize Names указаны названия символов для их использования</p>
-        <img src="customize_names.png" alt="">
+        <img src="../img/VS code/customize_names.png" alt="">
         <h3>Подключение и вывод на страницу иконок</h3>
         <p>
           Теперь можно подключить файл fontello.css к сайту в заголовке &lt;head&gt;: <br>
@@ -318,7 +323,7 @@
       </div>
     </div>
   </div>
-</section>
+</main>
 <footer>
   <h5>&copy WebDev 2023</h5>
 </footer>
