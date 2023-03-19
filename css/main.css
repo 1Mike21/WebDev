@@ -1,28 +1,44 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Regular.woff);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto-bold";
+  src: url(../fonts/Roboto-Bold.woff);
+  font-weight: 900;
+}
 body {
   background: linear-gradient(180deg, #213FA8 11.43%, #00A3FF 100%) fixed center;
   height: 50vh;
+  color: white;
+  font-family: "Roboto", sans-serif;
 }
 body .header {
   background: #263173;
 }
-body .main {
-  margin-top: 100px;
-  text-align: center;
-}
-body .menu {
+body .header .menu {
   background-color: #263173;
 }
-body .menu h5 {
+body .header .menu h5 {
   margin: 0 auto;
   margin-top: 20px;
+  color: white;
+  font-family: "Roboto-bold", sans-serif;
 }
-body .menu button {
-  padding-left: 0;
+body .header .btn-close {
+  width: 30px;
+  height: 30px;
+}
+body .header .btn-close:hover {
+  background-color: white;
 }
 body .accordion {
   --bs-accordion-border-color: none;
   --bs-accordion-btn-focus-border-color: none;
   --bs-accordion-btn-focus-box-shadow:none;
+  font-family: "Roboto-bold", sans-serif;
 }
 body .accordion .accordion-item {
   margin: 0 auto;
@@ -31,6 +47,7 @@ body .accordion .accordion-item {
 body .accordion .accordion-button {
   background-color: #49A68B;
   border: 2px solid #1D906E;
+  padding-left: 10px;
   height: 100px;
   width: 300px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 10px 16px rgba(0, 0, 0, 0.2);
@@ -70,6 +87,56 @@ body .accordion .accordion-body ul li a::before {
   width: 100%;
   height: 100%;
 }
-body .carousel-inner {
+body .main {
+  margin-top: 120px;
+  text-align: justify;
+}
+body .main p {
+  font-size: 25px;
+  margin: 0;
+  text-indent: 25px;
+}
+body .main a {
+  line-height: 80px;
+  background-color: #1D906E;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+}
+body .main a:hover {
+  background-color: #49A68B;
+  color: #263173;
+}
+body .main img {
+  margin: 20px auto;
+  display: block;
+  width: 1200px;
+}
+body .main h2, body .main h3, body .main h4 {
+  margin: 20px 0;
+  text-align: center;
+}
+body .main .carousel-inner {
   margin-bottom: 10px;
+}
+body .main .block {
+  background-color: #2da9c5;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 30px;
+  word-wrap: normal;
+  margin: 5px;
+  padding: 10px;
+  height: auto;
+  font-size: 20px;
+}
+body footer {
+  background-color: #263173;
+  height: 100px;
+  text-align: center;
+}
+body footer h5 {
+  padding-top: 32px;
+  font-size: 30px;
 }

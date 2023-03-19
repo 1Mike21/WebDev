@@ -3,93 +3,175 @@ $header:#263173;
 $button:#1D906E;
 $green:#49A68B;
 $menu-item:#1E5F84;
+$blue:#2da9c5;
 $white:white;
+$Roboto: 'Roboto',sans-serif;
+$Roboto-bold: 'Roboto-bold',sans-serif;
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Regular.woff);
+    font-weight: normal;
+    font-style:normal;
+}
+
+@font-face {
+    font-family: "Roboto-bold";
+    src: url(../fonts/Roboto-Bold.woff);
+    font-weight: 900;
+}
 
 body{
     background: $background fixed center;
     height: 50vh;
+    color: $white;
+    font-family: $Roboto;
 
     .header{
         background: $header;
-    }
+
+        .menu{
+            background-color: $header;
     
-    .main{
-        margin-top: 100px;
-        text-align: center;
-    }
+            h5{
+                margin: 0 auto;
+                margin-top: 20px;
+                color: $white;
+                font-family: $Roboto-bold;
+            }
 
-    .menu{
-        background-color: $header;
+            }
 
-        h5{
-            margin: 0 auto;
-            margin-top: 20px;
-        }
-
-        button{
-            padding-left: 0;
-        }
-    }
-
-    .accordion{
-        --bs-accordion-border-color: none;
-        --bs-accordion-btn-focus-border-color: none;
-        --bs-accordion-btn-focus-box-shadow:none;
-        
-        .accordion-item{
-        margin: 0 auto;
-        width: 300px;
-        }
-        
-        .accordion-button{
-            background-color: $green;
-            border: 2px solid $button;
-            height: 100px;
-            width: 300px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2), 0 10px 16px rgba(0,0,0,0.2);
-        }
-        
-        .accordion-body{
-            background: $menu-item;
-            padding: 0;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2), 0 10px 16px rgba(0,0,0,0.2);
-            ul{
-                padding-left: 0;
-                li{
-                    position: relative;
-                    list-style: none;
-                    border-bottom: 3px solid #123950;
-                    width: 300px;
-                    height: 50px;
-                    text-align: center;
-                    box-shadow: 0 4px  rgba(0,0,0,0.2), 0 10px 16px rgba(0,0,0,0.2);
-                    &:last-child{
-                        border-bottom: none;
-                        margin-bottom: -20px;
-                    }
-                    
-                    a{
-                        line-height: 50px;
-                        text-decoration: none;
-                        color:$white;
-                        width: 300px;
-                        
-                        &::before {
-                                content: '';
-                                position: absolute;
-                                top: 0;
-                                left: 0;
-                                width: 100%;
-                                height: 100%;
-                            }
-                        }
+            .btn-close{
+                width: 30px;
+                height: 30px;
+                &:hover{
+                    background-color: $white;
                 }
+            }
+        }
+    
+        .accordion{
+            --bs-accordion-border-color: none;
+            --bs-accordion-btn-focus-border-color: none;
+            --bs-accordion-btn-focus-box-shadow:none;
+            font-family: $Roboto-bold;
             
+            .accordion-item{
+            margin: 0 auto;
+            width: 300px;
+            }
+            
+            .accordion-button{
+                background-color: $green;
+                border: 2px solid $button;
+                padding-left: 10px;
+                height: 100px;
+                width: 300px;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.2), 0 10px 16px rgba(0,0,0,0.2);
+            }
+            
+            .accordion-body{
+                background: $menu-item;
+                padding: 0;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.2), 0 10px 16px rgba(0,0,0,0.2);
+                ul{
+                    padding-left: 0;
+                    li{
+                        position: relative;
+                        list-style: none;
+                        border-bottom: 3px solid #123950;
+                        width: 300px;
+                        height: 50px;
+                        text-align: center;
+                        box-shadow: 0 4px  rgba(0,0,0,0.2), 0 10px 16px rgba(0,0,0,0.2);
+                        &:last-child{
+                            border-bottom: none;
+                            margin-bottom: -20px;
+                        }
+                        
+                        a{
+                            line-height: 50px;
+                            text-decoration: none;
+                            color:$white;
+                            width: 300px;
+                            
+                            &::before {
+                                    content: '';
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                    }
+                
+                }
+            }
+        }
+
+        .main {
+            margin-top: 120px;
+            text-align: justify;
+
+            p{
+                font-size: 25px;
+                margin: 0;
+                text-indent: 25px;
+            }
+            
+            a{
+                line-height: 80px;
+                background-color: $button;
+                padding: 10px;
+                text-decoration: none;
+                color:$white;
+                border-radius: 5px;
+
+                &:hover{
+                    background-color: $green;
+                    color: $header;
+                }
+            }
+            img{
+                margin: 20px auto;
+                display: block;
+                width: 1200px;
+            }
+    
+            h2,h3,h4{
+                margin: 20px 0;
+                text-align: center;
+            }
+    
+            .carousel-inner{
+                margin-bottom: 10px;
+            }
+
+            .block{
+                background-color: $blue;
+                border-radius: 5px;
+                text-align: center;
+                line-height: 30px;
+                word-wrap: normal;
+                margin: 5px;
+                padding: 10px;
+                height: auto;
+                font-size: 20px;
+            }
+        }
+
+        footer{
+            background-color: $header;
+            height: 100px;
+            text-align: center;
+            
+            h5{
+                padding-top: 32px;
+                font-size: 30px;
             }
         }
     }
+
     
-    .carousel-inner{
-        margin-bottom: 10px;
-    }
-}
