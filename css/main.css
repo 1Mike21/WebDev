@@ -88,7 +88,7 @@ body .accordion .accordion-body ul li a::before {
   height: 100%;
 }
 body .main {
-  margin-top: 120px;
+  margin-top: 100px;
   text-align: justify;
 }
 body .main p {
@@ -134,11 +134,15 @@ body .main .block {
 body .main li {
   font-size: 25px;
 }
-body .main code {
-  border: 1px solid black;
-  background: white;
-  color: black;
-  padding: 3px;
+body .main pre {
+  width: 100%;
+  background: black;
+  border: 1px solid white;
+  display: inline-block;
+}
+body .main pre code {
+  color: white;
+  padding: 10px;
 }
 body footer {
   background-color: #263173;

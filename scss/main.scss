@@ -112,7 +112,7 @@ body{
         }
 
         .main {
-            margin-top: 120px;
+            margin-top: 100px;
             text-align: justify;
 
             p{
@@ -165,12 +165,16 @@ body{
                 font-size: 25px;
             }
             
-            code{
-                border: 1px solid black;
-                background: $white;
-                color:black;
-                padding: 3px;
-            }
+            pre{
+                width: 100%;
+                background: black;
+                border: 1px solid $white;
+                display: inline-block;
+                code{
+                        color: $white;
+                        padding: 10px;
+                    }
+            }    
         }
 
         footer{

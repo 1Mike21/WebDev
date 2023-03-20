@@ -11,103 +11,103 @@
 <body>
     <!-- Шапка сайта -->
     <header>
-        <nav class="navbar bg-body-tertiary fixed-top">
-            <div class="container-fluid">
-                <a href="../index.html"><img src="../img/logo.svg" alt="WebDev"></a>
-                <h1 id="header">Главная</h1>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Меню</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <!-- Аккордеон -->
-              <div class="accordion" id="accordionExample">
-                <!-- Visual Studio Code -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Visual Studio Code
-                    </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <ul>
-                        <li><a href="../VS code/vscode.html">О программе</a></li>
-                        <li><a href="../VS code/git.html">Git</a></li>
-                        <li><a href="../VS code/plugins.html">Плагины</a></li>
-                      </ul>
-                    </div>
+      <nav class="navbar header fixed-top">
+          <div class="container-fluid">
+              <a href="../index.html"><img src="../img/logo.svg" alt="WebDev"></a>
+              <h1 id="header">jQuery</h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas menu offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Меню</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <!-- Аккордеон -->
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+              <!-- Visual Studio Code -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                  <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                    Visual Studio Code
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                  <div class="accordion-body">
+                    <ul>
+                      <li><a href="../VS code/vscode.html">О программе</a></li>
+                      <li><a href="../VS code/git.html">Git</a></li>
+                      <li><a href="../VS code/plugins.html">Плагины</a></li>
+                    </ul>
                   </div>
                 </div>
-                <!-- Frontend -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Frontend
-                    </button>
-                  </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <ul>
-                        <li><a href="#">jQuery</a></li>
-                        <li><a href="react.html">React.js</a></li>
-                        <li><a href="vue.html">Vue.js</a></li>
-                        <li><a href="angular.html">Angular</a></li>
-                        <li><a href="preprocessors.html">Препроцессоры</a></li>
-                      </ul>
-                    </div>
+              </div>
+              <!-- Frontend -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpenheadingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                    Frontend
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                  <div class="accordion-body">
+                    <ul>
+                      <li><a href="#">jQuery</a></li>
+                      <li><a href="react.html">React.js</a></li>
+                      <li><a href="vue.html">Vue.js</a></li>
+                      <li><a href="angular.html">Angular</a></li>
+                      <li><a href="preprocessors.html">Препроцессоры</a></li>
+                    </ul>
                   </div>
                 </div>
-                <!-- Backend -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      Backend
-                    </button>
-                  </h2>
-                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <ul>
-                        <li><a href="../Backend/ospanel.html">Open Server Panel</a></li>
-                        <li><a href="../Backend/laravel.html">Laravel</a></li>
-                        <li><a href="../Backend/django.html">Django</a></li>
-                        <li><a href="../Backend/node.html">Node.js</a></li>
-                      </ul>
-                    </div>
+              </div>
+              <!-- Backend -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpenheadingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    Backend
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                  <div class="accordion-body">
+                    <ul>
+                      <li><a href="../Backend/ospanel.html">Open Server Panel</a></li>
+                      <li><a href="../Backend/laravel.html">Laravel</a></li>
+                      <li><a href="../Backend/django.html">Django</a></li>
+                      <li><a href="../Backend/node.html">Node.js</a></li>
+                    </ul>
                   </div>
                 </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingFour">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                      Практические задания
-                    </button>
-                  </h2>
-                  <div id="collapse" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <ul>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                      </ul>
-                    </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpenheadingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                    Практические задания
+                  </button>
+                </h2>
+                <div id="collapse" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                  <div class="accordion-body">
+                    <ul>
+                      <li><a href=""></a></li>
+                      <li><a href=""></a></li>
+                      <li><a href=""></a></li>
+                      <li><a href=""></a></li>
+                      <li><a href=""></a></li>
+                      <li><a href=""></a></li>
+                    </ul>
                   </div>
                 </div>
               </div>
             </div>
-        </div>
-        </div>
-    </nav>
-  </header>
+          </div>
+      </div>
+      </div>
+  </nav>
+</header>
     <!-- Раздел с текстом и картинками -->
     <main>
-      <div class="container">
+      <div class="container main">
         <div class="row">
           <div class="col-12">
             <h2>Что такое jQuery</h2>
@@ -126,52 +126,64 @@
         <div class="row">
           <div class="col-12">
             <p>Подключение jQuery к странице осуществляется также как и любого другого JavaScript файла. Т.е. посредством добавления в HTML тега &lt;script&gt; с атрибутом src, в котором необходимо задать полный или относительный путь к файлу.<br>
-            Подключение последней версии jQuery: <br>
-            <code>
-              &lt;script src="/assets/js/jquery-3.5.1.min.js"&gt;&lt;/script&gt;
-            </code> <br>
-            При этом разместить &lt;script&gt; можно как секции в &lt;head&gt;, так и в &lt;body&gt;. Но где же лучше? <br>
-            Раньше (до появления режимов async и defer) это рекомендовалось делать перед закрывающим тегом body: <br>
-            <code>
-              ... <br>
-              &lt;script src="/assets/js/jquery-3.5.1.min.js"&gt;&lt;/script&gt; <br>
-              &lt;/body&gt; <br>
-              &lt;/html&gt; <br>              
-            </code>
+            Подключение последней версии jQuery:
             </p>
+<pre>
+  <code>
+  1 &lt;script src="/assets/js/jquery-3.5.1.min.js"&gt;&lt;/script&gt;
+  </code>
+</pre>
+            <p>
+              При этом разместить &lt;script&gt; можно как секции в &lt;head&gt;, так и в &lt;body&gt;. Но где же лучше? <br>
+              Раньше (до появления режимов async и defer) это рекомендовалось делать перед закрывающим тегом body: 
+            </p>
+<pre>
+  <code>
+  1 ... 
+  2 &lt;script src="/assets/js/jquery-3.5.1.min.js"&gt;&lt;/script&gt;
+  3 &lt;/body&gt; 
+  4 &lt;/html&gt;               
+  </code>
+</pre>
             <p>При таком размещении скрипт не будет блокировать парсинг веб-страницы, т.к. его загрузка и выполнение будет осуществляться в самом конце. В результате, это приведёт к тому, что пользователь увидит содержимое страницы быстрее и сможет раньше с ней начать взаимодействовать.
             </p>
             <p>Если бы мы сделали это по-другому, например, поместили script в раздел head, то создали бы «задержку» при обработке страницы в самом её начале. А это привело бы к тому, что пользователю пришлось бы дольше ждать отображения контента страницы.</p>
             <p>Но сейчас так делать не рекомендуется. Лучше размещать скрипты как можно выше (в разделе &lt;head&gt;) с добавлением к ним атрибута defer или async. Эти атрибуты будут сообщать браузеру, что скрипт нужно загрузить в фоне, не останавливая при этом основной поток обработки страницы. Это позволит сделать сайт более производительным.</p>
-            <code>
-              ... <br>
-             &lt;-- отложенная загрузка библиотеки jQuery --&gt; <br>
-              &lt;script defer src="/assets/js/jquery-3.5.1.min.js"&gt;&lt;/script&gt; <br>
-              ... <br>
-            &lt;/head&gt; <br>
-            ...  <br>           
-            </code>
+<pre>
+  <code>
+  1 ...
+  2 &lt;-- отложенная загрузка библиотеки jQuery --&gt;
+  3 &lt;script defer src="/assets/js/jquery-3.5.1.min.js"&gt;&lt;/script&gt;
+  4 ...
+  5 &lt;/head&gt;
+  6 ...       
+  </code>
+</pre>
             <p>Использовать атрибут async применительно к jQuery не имеет смысла, т.к. эту библиотеку мы в основном используем для изменения DOM. Но перед тем, как править DOM, он должен быть построен. Это сделать нам поможет использование атрибута defer. Атрибут defer гарантирует что скрипт выполниться только после того, как дерево DOM будет построено, но до события DOMContentLoaded.</p>
             <p>При этом, если на странице имеется несколько внешних скриптов с атрибутом defer, то они будут выполняться строго в том порядке, в котором они расположены в коде. <br>
             Пример отложенного подключения jQuery и своего внешнего скрипта, зависящего от этой библиотеки:</p>
+<pre>
+  <code>
+  1 &lt;!-- сначала выполнится jQuery --&gt; 
+  2 &lt;script defer src="/assets/js/jquery-3.5.1.min.js"&gt;&lt;/script&gt; 
+  3 &lt;!-- после jQuery свой скрипт, зависящий от jQuery --&gt; 
+  4 &lt;script defer src="/assets/js/main.min.js"&gt;&lt;/script&gt; 
+  </code>
+</pre>
+            <p>При непосредственном размещении JavaScript кода в HTML документе его необходимо поместить в обработчик события DOMContentLoaded (в этом случае его код выполнится после загрузки библиотеки jQuery):</p>
+<pre>
+  <code>
+    1 &lt;script&gt; 
+    2 document.addEventListener('DOMContentLoaded', function() {   
+    3   // код, зависящий от jQuery 
+    4 ...  
+    5 });  
+    6 &lt;/script&gt;  
+    7 &lt;-- отложенная загрузка jQuery --&gt;  
+    8 &lt;script defer src="/assets/js/jquery-3.5.1.min.js">&lt;/script&gt;           
+  </code>
+</pre>
           </div>
-          <code>
-            &lt;!-- сначала выполнится jQuery --&gt; <br>
-            &lt;script defer src="/assets/js/jquery-3.5.1.min.js"&gt;&lt;/script&gt; <br>
-            &lt;!-- после jQuery свой скрипт, зависящий от jQuery --&gt; <br>
-            &lt;script defer src="/assets/js/main.min.js"&gt;&lt;/script&gt; <br>
-          </code>
-          <p>При непосредственном размещении JavaScript кода в HTML документе его необходимо поместить в обработчик события DOMContentLoaded (в этом случае его код выполнится после загрузки библиотеки jQuery):</p>
-          <code>
-            &lt;script&gt; <br>
-              document.addEventListener('DOMContentLoaded', function() { <br>  
-                 // код, зависящий от jQuery <br>
-                ...  <br>
-              });  <br>
-            &lt;/script&gt;  <br>
-            &lt;-- отложенная загрузка jQuery --&gt;  <br>
-            &lt;script defer src="/assets/js/jquery-3.5.1.min.js">&lt;/script&gt;           
-          </code>
         </div>
         <div class="row">
           <div class="col-12">
@@ -185,11 +197,13 @@
             <p>Т.е. CDN предоставляет ещё один способ подключить библиотеку jQuery. При этом непосредственно загружать его себе на сервер не нужно, он будет браться с CDN.</p>
             <p>Загрузку jQuery с CDN предоставляют множество компаний, например, таких как Google, Microsoft, Cloudflare, jQuery, Yandex и т.д.</p>
             <p>Подключить jQuery с CDN очень просто. Для этого нужно вставить script с атрибутом src, в котором нужно прописать путь до этой библиотеки. <br>
-              jQuery CDN: <br>
-              <code>
-                &lt;script src="https://code.jquery.com/jquery-3.5.1.min.js"&gt;&lt;/script&gt;                
-              </code>
+              jQuery CDN:
             </p>
+<pre>
+  <code>
+  1 &lt;script src="https://code.jquery.com/jquery-3.5.1.min.js"&gt;&lt;/script&gt;                
+  </code>
+</pre>
             <p>Дополнительно можно отметить, что если множество сайтов используют один и тот-же URL для подключения jQuery с CDN, то браузеру не потребуется загружать его для каждого такого ресурса. После первого скачивания он поместить jQuery в кэш и при последующих запросах будет брать её уже оттуда.</p>
           </div>
         </div>
@@ -201,31 +215,33 @@
         <div class="row">
           <div class="col-12">
             <p>Использование jQuery рассмотрим на простом HTML5 документе. Для этого мы его создадим, подключим к нему эту библиотеку с помощью Google CDN, и произведём с помощью неё ряд изменений на странице. А именно, изменим цвет фона body на #eee, выровняем h1 по центру и добавим в конец страницы элемент div с контентом «Я люблю jQuery».</p>
-            <code>
-              &lt;!doctype html&gt; <br>
-              &lt;html lang="ru"&gt; <br>
-              &lt;head&gt; <br>
-                &lt;meta charset="UTF-8"&gt; <br>
-                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; <br>
-                &lt;title&gt;Страница, к которой подключен jQuery&lt;/title&gt; <br>
-                &lt;script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"&gt;&lt;/script&gt; <br>
-              &lt;/head&gt; <br>
-              &lt;body&gt; <br>
-                &lt;h1&gt;Моя страница, к которой подключён jQuery&lt;/h1&gt; <br>
-                &lt;script&gt; <br>
-                  document.addEventListener('DOMContentLoaded', function () { <br>
-                    /* код на jQuery */ <br>
-                    // установим body фон #eee <br>
-                    $('body').css('background-color', '#eee'); <br>
-                    // выровняем h1 по центру <br>
-                    $('h1').css('text-align', 'center'); <br>
-                    // добавим в конец страницы элемент div с контентом "Я люблю jQuery" <br>
-                    $('body').append('&lt;div style="text-align: center; font-size: 20px;">Я люблю jQuery&lt;/div&gt;'); <br>
-                  }); <br>
-                &lt;/script&gt; <br>
-              &lt;/body&gt; <br>
-              &lt;/html&gt; <br>
-            </code>
+<pre>
+<code>
+  &lt;!doctype html&gt;
+&lt;html lang="ru"&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Страница, к которой подключен jQuery&lt;/title&gt; <br>
+  &lt;script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;h1&gt;Моя страница, к которой подключён jQuery&lt;/h1&gt;
+  &lt;script&gt; <br>
+  document.addEventListener('DOMContentLoaded', function () {
+    /* код на jQuery */
+    // установим body фон #eee
+    $('body').css('background-color', '#eee');
+    // выровняем h1 по центру
+    $('h1').css('text-align', 'center');
+    // добавим в конец страницы элемент div с контентом "Я люблю jQuery"
+      $('body').append('&lt;div style="text-align: center; font-size: 20px;">Я люблю jQuery&lt;/div&gt;');
+    });
+    &lt;/script&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+  </code>
+</pre>
             <p>Синтаксис jQuery начинается с функции jQuery или с более короткого и красивого псевдонима - знака $ (как в этом примере).</p>
           </div>
         </div>
