@@ -8,6 +8,11 @@ $white:white;
 $Roboto: 'Roboto',sans-serif;
 $Roboto-bold: 'Roboto-bold',sans-serif;
 
+// @media screen and (max-width:700px) {
+//    .main{
+//     text-align:center;}
+// }
+
 @font-face {
     font-family: "Roboto";
     src: url(../fonts/Roboto-Regular.woff);
@@ -165,16 +170,17 @@ body{
                 font-size: 25px;
             }
             
-            pre{
-                width: 100%;
-                background: black;
-                border: 1px solid $white;
-                display: inline-block;
-                code{
-                        color: $white;
-                        padding: 10px;
-                    }
-            }    
+            
+            code{
+                    width: 100%;
+                    background: black;
+                    border: 1px solid $white;
+                    display: inline-block;
+                    color: $white;
+                    padding: 10px;
+                    white-space: pre;
+                    overflow-x: scroll;
+                }    
         }
 
         footer{

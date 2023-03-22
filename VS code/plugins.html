@@ -138,9 +138,9 @@
     </div>
     <div class="row">
       <div class="col-12">
-        <img src="../img/plugins/liveServer.png" alt="">
+        <img class="img-fluid" src="../img/plugins/liveServer.png" alt="">
         <p>Чтобы сразу увидеть результат работы нужно только нажать на кнопку и в браузере отобразится страница, которая автоматически будет перезагружаться.</p>
-        <img src="../img/plugins/runLiveServer.png" alt="">
+        <img class="img-fluid" src="../img/plugins/runLiveServer.png" alt="">
         <p>Это очень удобно, так как любые изменения будут отображаться без обновления страницы. Не забывайте отключать плагин с помощью «Stop Live Server»</p>
       </div>
     </div>
@@ -156,7 +156,7 @@
         <p>
           К соединению можно подключить также терминалы или локальные веб-приложения.
         </p> 
-        <img src="../img/plugins/liveShare.png" alt="">
+        <img class="img-fluid" src="../img/plugins/liveShare.png" alt="">
       </div>
     </div>
     <div class="row">
@@ -168,7 +168,7 @@
       <div class="col-12">
         <p>Иногда для комфортной работы требуются очень простые вещи. Например, плагин HTML Preview, который умеет показывать, как будет выглядеть HTML, который вы пишете.
         </p>
-        <img src="../img/plugins/htmlPreview.png" alt="">
+        <img class="img-fluid" src="../img/plugins/htmlPreview.png" alt="">
       </div>
     </div>
     <div class="row">
@@ -180,7 +180,7 @@
       <div class="col-12">
         <p>Важно понимать, что браузеры не понимают Sass-код напрямую. Как и в целом препроцессоры. Sass компилируется в чистый CSS-код. Как все Sass-стили сводят в один общий index.sass, который потом компилируется index.css. За счет этого повышается скорость загрузки страницы, ведь браузеру намного легче подключить стили одним файлом, чем считывать их по отдельности. Один из способов компилировать Sass-код это установить данное расширение.
         </p>
-        <img src="../img/plugins/liveSass.png" alt="">
+        <img class="img-fluid" src="../img/plugins/liveSass.png" alt="">
       </div>
     </div>
     <div class="row">
@@ -192,7 +192,7 @@
       <div class="col-12">
         <p>Позволяет быстро работать с изображениями в коде. Давайте я подключу картинку, после мы видим на полях появилась ее маленькая иконка. Когда длинный html-код, много картинок, мы можем ориентироваться, видеть что где у нас подключено. При наведении на путь картинки у нас появляется информационное окно, где мы можем открыть файл картинку, видим что это за картинка, а также некоторая информация о картинке.
         </p>
-        <img src="../img/plugins/imagePreview.png" alt="">
+        <img class="img-fluid" src="../img/plugins/imagePreview.png" alt="">
       </div>
     </div>
     <div class="row">
@@ -203,7 +203,7 @@
     <div class="row">
       <div class="col-12">
         <p>Позволяет генерировать классы в css на основе названий классов из HTML</p>
-        <img src="../img/plugins/vsHtmlToCss.png" alt="">
+        <img class="img-fluid"  src="../img/plugins/vsHtmlToCss.png" alt="">
       </div>
     </div>
     <div class="row">
@@ -221,7 +221,7 @@
         <p>Очень часто при разработке сайтов встречается ситуация, что необходим какой-то конкретный формат изображения. Изменить формат файла можно разными способами, но самый удобный, по нашему мнению, это использование онлайн-конвертеров. <br>
           <a href=" https://image.online-convert.com/ru">Один из таких сайтов:</a>
         </p>
-        <img src="../img/VS code/convert_image.png" alt="">
+        <img class = "img-fluid" src="../img/VS code/convert_image.png" alt="">
       </div>
     </div>
     <div class="row">
@@ -278,47 +278,51 @@
           Рассмотрим как использовать иконки на примере сайта Fontello. <br>
           Сервис Fontello действует довольно просто: вы отмечаете символы, которые вам нравятся, и нажимаете кнопку «Download webfont».
         </p>
-        <img src="../img/VS code/download_webfonts.png" alt="">
+        <img class="img-fluid" src="../img/VS code/download_webfonts.png" alt="">
         <p>Внутри скачанного архива содержится шрифт fontello в четырёх разных форматах: ttf, svg, eot и  woff. Это гарантирует, что в любом браузере, даже устаревшем, какой-то из них будет обязательно работать.
           Нам требуется две вещи: папка font целиком, она, напомню, хранит четыре шрифтовых файла в разном формате, и коды символов. Их можно посмотреть в файле fontello.css или на сайте во вкладке «Customize Codes».
         </p>
-        <img src="../img/VS code/customize_codes.png" alt="">
+        <img class="img-fluid" src="../img/VS code/customize_codes.png" alt="">
         <p>На вкладке Customize Names указаны названия символов для их использования</p>
-        <img src="../img/VS code/customize_names.png" alt="">
+        <img class="img-fluid" src="../img/VS code/customize_names.png" alt="">
         <h3>Подключение и вывод на страницу иконок</h3>
         <p>
-          Теперь можно подключить файл fontello.css к сайту в заголовке &lt;head&gt;: <br>
-          <code>
-            &lt;head&gt;<br>
-              ...<br>
-              &lt;link href="css/fontello.css" rel="stylesheet" type="text/css"&gt;<br>
-              ...<br>
-              &lt;/head&gt;<br>
-          </code> <br>
-          Либо добавить стили в основной файл стилей, обычно это style.css из fontello.css: <br>
-          <code>
-            @font-face { <br>
-              font-family: 'fontello'; <br>
-              src: url('../font/fontello.eot?5040357'); <br>
-              src: url('../font/fontello.eot?5040357#iefix') format('embedded-opentype'), <br>
-                   url('../font/fontello.woff2?5040357') format('woff2'), <br>
-                   url('../font/fontello.woff?5040357') format('woff'), <br>
-                   url('../font/fontello.ttf?5040357') format('truetype'), <br>
-                   url('../font/fontello.svg?5040357#fontello') format('svg'); <br>
-              font-weight: normal; <br>
-              font-style: normal;
-            }            
-          </code>
+          Теперь можно подключить файл fontello.css к сайту в заголовке &lt;head&gt;:
         </p>
+<code>
+  &lt;head&gt;
+  ...
+  &lt;link href="css/fontello.css" rel="stylesheet" type="text/css"&gt;
+  ...
+  &lt;/head&gt;
+</code> 
+        <p>
+          Либо добавить стили в основной файл стилей, обычно это style.css из fontello.css: <br>
+        </p>
+<code>
+  @font-face { 
+    font-family: 'fontello'; 
+  src: url('../font/fontello.eot?5040357'); 
+  src: url('../font/fontello.eot?5040357#iefix') format('embedded-opentype'), 
+  url('../font/fontello.woff2?5040357') format('woff2'), 
+        url('../font/fontello.woff?5040357') format('woff'), 
+        url('../font/fontello.ttf?5040357') format('truetype'), 
+        url('../font/fontello.svg?5040357#fontello') format('svg'); 
+        font-weight: normal; 
+        font-style: normal;
+      }            
+</code>
           <h3>Использование</h3>
           <p>
             Вывод иконки происходит путём добавления класса с её именем. <br>
-            Например: <br>
-            <code>
-              &lt;div class="letter"&gt; <br>
-                &lt;i class="icon-phone"&gt;&lt;/i&gt; <br>
-              &lt;/div&gt; <br>
-            </code>
+            Например:
+          </p>
+<code>
+  &lt;div class="letter"&gt; 
+    &lt;i class="icon-phone"&gt;&lt;/i&gt; 
+  &lt;/div&gt; 
+</code>
+          <p>
             В целом Fontello очень хороший сервис и его стоит использовать, поскольку он позволяет загружать только выбранные иконки, что существенно экономит время загрузки конечной страницы.
           </p>
       </div>

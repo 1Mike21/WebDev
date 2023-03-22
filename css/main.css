@@ -134,15 +134,15 @@ body .main .block {
 body .main li {
   font-size: 25px;
 }
-body .main pre {
+body .main code {
   width: 100%;
   background: black;
   border: 1px solid white;
   display: inline-block;
-}
-body .main pre code {
   color: white;
   padding: 10px;
+  white-space: pre;
+  overflow-x: scroll;
 }
 body footer {
   background-color: #263173;
