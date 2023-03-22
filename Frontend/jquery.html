@@ -206,29 +206,29 @@ document.addEventListener('DOMContentLoaded', function() {
           <div class="col-12">
             <p>Использование jQuery рассмотрим на простом HTML5 документе. Для этого мы его создадим, подключим к нему эту библиотеку с помощью Google CDN, и произведём с помощью неё ряд изменений на странице. А именно, изменим цвет фона body на #eee, выровняем h1 по центру и добавим в конец страницы элемент div с контентом «Я люблю jQuery».</p>
 <code>
-  &lt;!doctype html&gt;
+&lt;!doctype html&gt;
 &lt;html lang="ru"&gt;
 &lt;head&gt;
 &lt;meta charset="UTF-8"&gt;
-  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-  &lt;title&gt;Страница, к которой подключен jQuery&lt;/title&gt; <br>
-  &lt;script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"&gt;&lt;/script&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-  &lt;h1&gt;Моя страница, к которой подключён jQuery&lt;/h1&gt;
-  &lt;script&gt; <br>
-  document.addEventListener('DOMContentLoaded', function () {
-    /* код на jQuery */
-    // установим body фон #eee
-    $('body').css('background-color', '#eee');
-    // выровняем h1 по центру
-    $('h1').css('text-align', 'center');
-    // добавим в конец страницы элемент div с контентом "Я люблю jQuery"
-      $('body').append('&lt;div style="text-align: center; font-size: 20px;">Я люблю jQuery&lt;/div&gt;');
-    });
-    &lt;/script&gt;
-    &lt;/body&gt;
-    &lt;/html&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;title&gt;Страница, к которой подключен jQuery&lt;/title&gt;
+&lt;script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;Моя страница, к которой подключён jQuery&lt;/h1&gt;
+&lt;script&gt;
+document.addEventListener('DOMContentLoaded', function () {
+  /* код на jQuery */
+  // установим body фон #eee
+  $('body').css('background-color', '#eee');
+  // выровняем h1 по центру
+  $('h1').css('text-align', 'center');
+  // добавим в конец страницы элемент div с контентом "Я люблю jQuery"
+    $('body').append('&lt;div style="text-align: center; font-size: 20px;">Я люблю jQuery&lt;/div&gt;');
+  });
+  &lt;/script&gt;
+  &lt;/body&gt;
+  &lt;/html&gt;
 </code>
             <p>Синтаксис jQuery начинается с функции jQuery или с более короткого и красивого псевдонима - знака $ (как в этом примере).</p>
           </div>
@@ -319,20 +319,20 @@ document.addEventListener('DOMContentLoaded', function() {
             <h2>Преимущества</h2>
           </div>
         </div>
-        <div class="row">
-          <div class="col-12 col-md-6 col-xl 4 block">Многофункциональность</div>
-          <div class="col-12 col-md-6 col-xl 4 block">Быстрота</div>
-          <div class="col-12 col-md-6 col-xl 4 block">Компактность кода</div>
-          <div class="col-12 col-md-6 col-xl 4 block">Кроссбраузерность</div>
-          <div class="col-12 col-md-6 col-xl 4 block">Открытый код</div>
-          <div class="col-12 col-md-6 col-xl 4 block">Простой и понятный синтаксис</div>
+        <div class="row align-items-center justify-content-center gy-3">
+          <div class="col-12 col-md-6 col-xl-4 block">Многофункциональность</div>
+          <div class="col-12 col-md-6 col-xl-4 block">Быстрота</div>
+          <div class="col-12 col-md-6 col-xl-4 block">Компактность кода</div>
+          <div class="col-12 col-md-6 col-xl-4 block">Кроссбраузерность</div>
+          <div class="col-12 col-md-6 col-xl-4 block">Открытый код</div>
+          <div class="col-12 col-md-6 col-xl-4 block">Простой и понятный синтаксис</div>
         </div>
         <div class="row">
           <div class="col-12">
             <h2>Недостатки</h2>
           </div>
         </div>
-        <div class="row">
+        <div class="row align-items-center justify-content-center">
           <div class="col-12 col-md-6 col-xl-4 block">Увеличивает скорость загрузки сайта</div>
           <div class="col-12 col-md-6 col-xl-4 block">Снижает производительность кода</div>
         </div>

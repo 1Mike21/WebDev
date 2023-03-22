@@ -88,7 +88,7 @@ body .accordion .accordion-body ul li a::before {
   height: 100%;
 }
 body .main {
-  margin-top: 100px;
+  margin-top: 135px;
   text-align: justify;
 }
 body .main p {
@@ -109,7 +109,7 @@ body .main a:hover {
   color: #263173;
 }
 body .main img {
-  margin: 20px auto;
+  margin: 10px auto;
   display: block;
   width: 1200px;
 }

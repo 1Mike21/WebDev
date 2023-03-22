@@ -1,275 +1,336 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/main.css">
-    <title>Инструменты для веб-разработки</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <title>Инструменты для веб-разработки</title>
 </head>
+
 <body>
- <!-- Шапка сайта -->
- <header>
-  <nav class="navbar header fixed-top">
+  <!-- Шапка сайта -->
+  <header>
+    <nav class="navbar header fixed-top">
       <div class="container-fluid">
-          <a href="../index.html"><img src="../img/logo.svg" alt="WebDev"></a>
-          <h1 id="header">Visual Studio Code</h1>
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="offcanvas menu offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Меню</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <!-- Аккордеон -->
-        <div class="accordion" id="accordionPanelsStayOpenExample">
-          <!-- Visual Studio Code -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-              <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                Visual Studio Code
-              </button>
-            </h2>
-            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
-              <div class="accordion-body">
-                <ul>
-                  <li><a href="#">О программе</a></li>
-                  <li><a href="../VS code/git.html">Git</a></li>
-                  <li><a href="../VS code/plugins.html">Плагины</a></li>
-                </ul>
-              </div>
-            </div>
+        <a href="../index.html"><img src="../img/logo.svg" alt="WebDev"></a>
+        <h1 id="header">Visual Studio Code</h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas menu offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Меню</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
-          <!-- Frontend -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="panelsStayOpenheadingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                Frontend
-              </button>
-            </h2>
-            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-              <div class="accordion-body">
-                <ul>
-                  <li><a href="../Frontend/jquery.html">jQuery</a></li>
-                  <li><a href="../Frontend/react.html">React.js</a></li>
-                  <li><a href="../Frontend/vue.html">Vue.js</a></li>
-                  <li><a href="../Frontend/angular.html">Angular</a></li>
-                  <li><a href="../Frontend/preprocessors.html">Препроцессоры</a></li>
-                </ul>
+          <div class="offcanvas-body">
+            <!-- Аккордеон -->
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+              <!-- Visual Studio Code -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                  <button class="accordion-button " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseOne">
+                    Visual Studio Code
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                  aria-labelledby="panelsStayOpen-headingOne">
+                  <div class="accordion-body">
+                    <ul>
+                      <li><a href="#">О программе</a></li>
+                      <li><a href="../VS code/git.html">Git</a></li>
+                      <li><a href="../VS code/plugins.html">Плагины</a></li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <!-- Backend -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="panelsStayOpenheadingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                Backend
-              </button>
-            </h2>
-            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-              <div class="accordion-body">
-                <ul>
-                  <li><a href="../Backend/ospanel.html">Open Server Panel</a></li>
-                  <li><a href="../Backend/laravel.html">Laravel</a></li>
-                  <li><a href="../Backend/django.html">Django</a></li>
-                  <li><a href="../Backend/node.html">Node.js</a></li>
-                </ul>
+              <!-- Frontend -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpenheadingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseTwo">
+                    Frontend
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                  aria-labelledby="panelsStayOpen-headingTwo">
+                  <div class="accordion-body">
+                    <ul>
+                      <li><a href="../Frontend/jquery.html">jQuery</a></li>
+                      <li><a href="../Frontend/react.html">React.js</a></li>
+                      <li><a href="../Frontend/vue.html">Vue.js</a></li>
+                      <li><a href="../Frontend/angular.html">Angular</a></li>
+                      <li><a href="../Frontend/preprocessors.html">Препроцессоры</a></li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="panelsStayOpenheadingFour">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
-                Практические задания
-              </button>
-            </h2>
-            <div id="collapse" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
-              <div class="accordion-body">
-                <ul>
-                  <li><a href=""></a></li>
-                  <li><a href=""></a></li>
-                  <li><a href=""></a></li>
-                  <li><a href=""></a></li>
-                  <li><a href=""></a></li>
-                  <li><a href=""></a></li>
-                </ul>
+              <!-- Backend -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpenheadingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseThree">
+                    Backend
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                  aria-labelledby="panelsStayOpen-headingThree">
+                  <div class="accordion-body">
+                    <ul>
+                      <li><a href="../Backend/ospanel.html">Open Server Panel</a></li>
+                      <li><a href="../Backend/laravel.html">Laravel</a></li>
+                      <li><a href="../Backend/django.html">Django</a></li>
+                      <li><a href="../Backend/node.html">Node.js</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpenheadingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseFour">
+                    Практические задания
+                  </button>
+                </h2>
+                <div id="collapse" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                  <div class="accordion-body">
+                    <ul>
+                      <li><a href=""></a></li>
+                      <li><a href=""></a></li>
+                      <li><a href=""></a></li>
+                      <li><a href=""></a></li>
+                      <li><a href=""></a></li>
+                      <li><a href=""></a></li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-  </div>
-  </div>
-</nav>
-</header>
-<!-- Раздел с текстом и картинками -->
-<main>
-  <div class="container main">
-    <div class="row">
-      <div class="col-12">
-        <p>
-          Существуют как платные редакторы, так и бесплатные. На сегодняшний день наиболее популярные из них: Visual Studio Code, Sublime Text 3, Atom, WebStorm.
-        </p>
+    </nav>
+  </header>
+  <!-- Раздел с текстом и картинками -->
+  <main>
+    <div class="container main">
+      <div class="row">
+        <div class="col-12">
+          <p>
+            Существуют как платные редакторы, так и бесплатные. На сегодняшний день наиболее популярные из них: Visual
+            Studio Code, Sublime Text 3, Atom, WebStorm.
+          </p>
+        </div>
+      </div>
+      <!-- Что такое VS Code -->
+      <div class="row">
+        <div class="col-12">
+          <h2>Что такое VS Code</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <p>
+            VS Code — бесплатный и один из самых популярных текстовых редакторов кода от Microsoft.
+            Редактор поможет в работе веб-разработчикам и верстальщикам всех уровней. С одной стороны он подходит
+            новичкам, потому что его интерфейс интуитивно прост и понятен. С другой стороны в VS Code встроены много
+            возможностей, которые интересны опытным разработчикам.
+          </p>
+          <a href="https://code.visualstudio.com">Скачать Visual Studio Code</a>
+        </div>
+      </div>
+      <!-- Интерфейс и основные возможности программы -->
+      <div class="row">
+        <div class="col-12">
+          <h2>Интерфейс и основные возможности программы</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <p>
+            При запуске редактора в первый раз открывается стартовая страница, на которой описаны все возможности
+            редактора. Все ссылки интерактивные и открывают нужную часть интерфейса или страницу в браузере.
+          </p>
+          <img class="img-fluid" src="../img/VS code/welcome.png" alt="">
+          <p>
+            Редактор поддерживает множество языков программирования и легко настраивается под пользователя. Можно
+            установить различные сочетания клавиш и цветовые схемы.
+          </p>
+          <img class="img-fluid" src="../img/VS code/interface.png" alt="">
+          <p>Основную часть экрана занимает окно с текстовым содержимым файла. В левой части экрана находятся вкладки
+            активного меню, в котором находятся главные функции редактора. Вкладка проводника открывается по умолчанию
+            при запуске программы. В неё выводятся список открытых файлов и каталог открытой папки.</p>
+          <p>Следующий пункт — поиск. В поле можно ввести искомое значение, и редактор покажет, в каких местах оно
+            находится. При желании можно поменять значение через поле замены.</p>
+          <img class="img-fluid" src="../img/VS code/search.png" alt="">
+          <p>Visual Studio Code имеет интегрированное управление системой управления версиями (SCM) и включает в себя
+            готовую поддержку Git.</p>
+          <p>Настройка Git в Visual Studio Code подробна описана в официальной документации.</p>
+          <a href="https://code.visualstudio.com/docs/sourcecontrol/overview">Официальная документация Git</a>
+          <p>VS Code отличает от других текстовых редакторов наличие встроенного отладчика. После небольшой настройки
+            можно искать баги в коде прямо из редактора — например, поставить точку остановки и наблюдать за выполнением
+            конкретного участка кода. Помимо этого у редактора есть встроенная консоль, в которую может выводиться
+            результат работы или сообщение об ошибке, если что-то пошло не так. Отладчик можно настроить под разные
+            языки и разные задачи.</p>
+          <p>Последний пункт активного меню позволяет устанавливать расширения. В VS Code есть расширения для
+            большинства языков программирования. </p>
+          <p><i>File.</i> В пункте File находятся команды, которые отвечают за работу с файлами рабочей папки. Через неё
+            можно сохранять и открывать файлы, выбирать папки и выполнять другие действия.</p>
+          <p><i>Edit.</i> Через этот пункт можно работать с открытым файлом — отменять последние действия, производить
+            поиск по файлу.
+          </p>
+          <p><i>Selection.</i> В пункте Selection можно найти команды для выделения нужного участка кода.</p>
+          <p><i>View.</i> Открывать различные приложения, встроенные в редактор кода, можно через пункт View. Здесь
+            дублируются пункты активного меню, а ещё здесь можно открыть терминал, настроить элементы интерфейса и
+            многое другое.
+          </p>
+          <p><i>Go.</i> В пункте File находятся команды, которые отвечают за работу с файлами рабочей папки. Через неё
+            можно сохранять и открывать файлы, выбирать папки и выполнять другие действия.Через пункт Go можно
+            перемещаться между открытыми файлами и по документу. Также можно разделять рабочую область на части. Это
+            удобно для работы на большом мониторе — можно держать в одном месте разметку и файлы стилей.
+          </p>
+          <p><i>Debug.</i> Здесь собраны команды для отладки скриптов.</p>
+          <p><i>Terminal.</i> В редактор встроен терминал (он же командная строка). Он может выполнять как отдельные
+            задачи, так и выводить командную строку в интерфейс редактора.
+          </p>
+          <p><i>Help.</i> В этом пункте собраны справочные материалы по работе редактора, его основным функциями и общая
+            информация о программе.
+          </p>
+        </div>
+      </div>
+      <!-- Горячие клавиши -->
+      <div class="row">
+        <div class="col-12">
+          <h2>Горячие клавиши</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <p>Программа дает возможность удобно писать программные коды, но в то же время у программиста уходит много
+            времени на различные редактирования и исправления.</p>
+          <p>Visual Studio Code предоставляет широкие и простые возможности редактирования сочетаний клавиш с помощью
+            редактора сочетаний клавиш. В нем перечислены все доступные команды с привязками клавиш и без них, и вы
+            можете легко изменить / удалить / сбросить их привязки клавиш с помощью доступных действий. В верхней части
+            также есть окно поиска, которое поможет вам найти команды или привязки клавиш. Вы можете открыть этот
+            редактор, перейдя в меню "Файл"> "Настройки"> "Сочетания клавиш". (Код> Настройки> Сочетания клавиш в
+            macOS).Самое главное, что вы можете видеть привязки клавиш в соответствии с раскладкой клавиатуры.</p>
+          <p>Так как существует огромное количество горячих клавиш, ниже мы разберем часто использующиеся горячие
+            клавиши, которые сэкономят кучу вашего времени при написании программного кода.</p>
+          <h3>Быстро добавить/убрать комментарий</h3>
+          <p>Windows — <kbd>Cntr + /</kbd></p>
+          <p>macOS — <kbd>Cntr + /</kbd></p>
+          <p>Обычно чтобы добавить комментарий, нужно перейти в начало строки и дописать туда два слеша. Это медленно.
+            Быстрее нажать в любом месте строки <kbd>Ctrl + /</kbd>, и строка закомментируется. А если строка уже
+            закомментирована, то комментарий исчезнет.</p>
+          <h3>Перейти к строке под номером</h3>
+          <p>Windows — <kbd>Cntr + G</kbd></p>
+          <p>macOS — <kbd>Cntr + G</kbd></p>
+          <p>Иногда отладчики внезапно сообщают, что на строке 953 случилась ошибка. Чтобы не искать вручную, не листать
+            и не тратить на это время, нажмите <kbd>Ctrl + G</kbd>, введите номер строки и исправляйте ошибку.
+          <h3>Поиск</h3>
+          <p>Windows — <kbd>Cntr + F</kbd></p>
+          <p>macOS — <kbd>Cntr + F</kbd></p>
+          <p>Введите искомое — высветятся все найденные места. Остаётся перемещаться по ним (стрелочками в форме
+            поиска).</p>
+          <h3>Поменять строку местами с соседними</h3>
+          <p>Windows — <kbd>Alt + ↑ / ↓</kbd></p>
+          <p>macOS — <kbd>Option + ↑ / ↓</kbd></p>
+          <p><kbd>Alt</kbd> и стрелки меняют текущую строку местами с соседними.</p>
+          <h3>Дублировать строку</h3>
+          <p>Windows — <kbd>Shift + Alt + ↓ / ↑</kbd></p>
+          <p>macOS — <kbd>Shift + Option + ↓ / ↑</kbd></p>
+          <p>Это для тех, кто не хочет копировать и вставлять несколько раз одно и то же.</p>
+          <h3>Перейти к парной скобке</h3>
+          <p>Windows — <kbd>Ctrl + Shift + \</kbd></p>
+          <p>macOS — <kbd>Shift + Command + \</kbd></p>
+          <p>Когда кода становится много, очень просто запутаться в закрывающих и открывающих скобках, непонятно, где
+            какой блок. На помощь приходит <kbd>Ctrl + Shift + \</kbd> — это хорошее дополнение к стандартной подсветке
+            парных скобок в VS Code.</p>
+          <p>Это для тех, кто не хочет копировать и вставлять несколько раз одно и то же.</p>
+          <h3>Переименовать переменную</h3>
+          <p>Windows — <kbd>F2</kbd></p>
+          <p>macOS — <kbd>F2</kbd></p>
+          <p>Клавиша <kbd>F2</kbd> позволяет переименовать все переменные с таким названием внутри блока, не внутри
+            всего открытого файла.</p>
+          <h3>Отформатировать документ</h3>
+          <p>Windows — <kbd>Shift + Alt + F</kbd></p>
+          <p>macOS — <kbd>Shift + Option + F</kbd></p>
+          <p>VS Code красиво отформатирует документ — расставит по местам блоки, скобки, и сделает код более читаемым.
+          </p>
+          <h3>Перейти к переменной</h3>
+          <p>Windows — <kbd>F12</kbd></p>
+          <p>macOS — <kbd>F12</kbd></p>
+          <p>Иногда нужно узнать, где была объявлена переменная, какая у неё область видимости. <kbd>F12</kbd> перенесёт
+            нас к объявлению выделенной переменной, функции или метода. Если объявление в другом файле — всё равно
+            перенесёт.</p>
+          <h3>Включить/выключить перенос слов</h3>
+          <p>Windows — <kbd>Alt + Z</kbd></p>
+          <p>macOS — <kbd>Option + Z</kbd></p>
+          <p>Если строки кода или текст не вмещается в редактор по ширине, включите перенос.</p>
+          <h3>Разделить рабочую область</h3>
+          <p>Windows — <kbd>Ctrl + Alt + →/←</kbd></p>
+          <p>macOS — <kbd>Ctrl + Alt + →/←</kbd></p>
+          <p><kbd>Ctrl + Alt + →</kbd> — разделить рабочую область и переместить актуальную вкладку вправо.<kbd>Ctrl +
+              Alt + ←</kbd> возвращает вкладку назад.
+          </p>
+          <h3>Мультикурсор</h3>
+          <p>Позволяет писать одинаковый код одновременно на нескольких строках.</p>
+          <h4>Чтобы размножить курсор:</h2>
+            <p>Зажмите <kbd>Alt</kbd> (в Windows) или <kbd>⌥Option</kbd> (в macOS) и кликайте левой кнопкой мышки там,
+              куда нужно добавить курсор. Выделите несколько строк, зажав среднюю кнопку мыши. В каждой из выделенных
+              строк появится по курсору. Если лень кликать мышкой, то дублировать курсор можно так: <kbd>Ctrl + Alt + ↑
+                / ↓</kbd> (Windows) или <kbd>⌥Option + ⌘Cmd + ↑ / ↓</kbd> (macOS).
+            </p>
+            <h3>Выделение целого слова</h3>
+            <p>Windows — <kbd>Ctrl + Shift + →/←</kbd></p>
+            <p>macOS — <kbd>Command + Shift + →/←</kbd></p>
+            <p>Помогает осуществить быстрое выделение и редактирование необходимых слов. Особенно поможет, когда в
+              готовом коде нужно срочно сделать правку требуемых слов.
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-12">
+          <h2>Преимущества</h2>
+        </div>
+      </div>
+      <div class="row align-items-center justify-content-center gy-3">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 block">Мультифункциональность</div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 block">Простота и гибкость</div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 block">Расширяемая библиотека</div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 block">Много настроек</div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 block">Удобное дерево проекта</div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 block">Встроенный Git</div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2>Недостатки</h2>
+        </div>
+      </div>
+      <div class="row align-items-center justify-content-center">
+        <div class="col-12 col-md-6 block">Недостаточно стабильный</div>
+        <div class="col-12 col-md-6 block">Низкая скорость запуска</div>
       </div>
     </div>
-    <!-- Что такое VS Code -->
-    <div class="row">
-      <div class="col-12">
-        <h2>Что такое VS Code</h2>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h5>&copy WebDev 2023</h5>
+        </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-12">
-        <p>
-          VS Code — бесплатный и один из самых популярных текстовых редакторов кода от Microsoft.
-  Редактор поможет в работе веб-разработчикам и верстальщикам всех уровней. С одной стороны он подходит новичкам, потому что его интерфейс интуитивно прост и понятен. С другой стороны в VS Code встроены много возможностей, которые интересны опытным разработчикам.
-        </p>
-        <a href="https://code.visualstudio.com">Скачать Visual Studio Code</a>
-      </div>
-    </div>
-    <!-- Интерфейс и основные возможности программы -->
-    <div class="row">
-      <div class="col-12">
-        <h2>Интерфейс и основные возможности программы</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12">
-        <p>
-          При запуске редактора в первый раз открывается стартовая страница, на которой описаны все возможности редактора. Все ссылки интерактивные и открывают нужную часть интерфейса или страницу в браузере.
-        </p>
-        <img class="img-fluid" src="../img/VS code/welcome.png" alt="">
-        <p>
-          Редактор поддерживает множество языков программирования и легко настраивается под пользователя. Можно установить различные сочетания клавиш и цветовые схемы.
-        </p>
-        <img class="img-fluid" src="../img/VS code/interface.png" alt="">
-        <p>Основную часть экрана занимает окно с текстовым содержимым файла. В левой части экрана находятся вкладки активного меню, в котором находятся главные функции редактора. Вкладка проводника открывается по умолчанию при запуске программы. В неё выводятся список открытых файлов и каталог открытой папки.</p>
-        <p>Следующий пункт — поиск. В поле можно ввести искомое значение, и редактор покажет, в каких местах оно находится. При желании можно поменять значение через поле замены.</p>
-        <img class="img-fluid" src="../img/VS code/search.png" alt="">
-        <p>Visual Studio Code имеет интегрированное управление системой управления версиями (SCM) и включает в себя готовую поддержку Git.</p>
-        <p>Настройка Git в Visual Studio Code подробна описана в официальной документации.</p>
-        <a href="https://code.visualstudio.com/docs/sourcecontrol/overview">Официальная документация Git</a>
-        <p>VS Code отличает от других текстовых редакторов наличие встроенного отладчика. После небольшой настройки можно искать баги в коде прямо из редактора — например, поставить точку остановки и наблюдать за выполнением конкретного участка кода. Помимо этого у редактора есть встроенная консоль, в которую может выводиться результат работы или сообщение об ошибке, если что-то пошло не так. Отладчик можно настроить под разные языки и разные задачи.</p>
-        <p>Последний пункт активного меню позволяет устанавливать расширения. В VS Code есть расширения для большинства языков программирования. </p>
-        <p><i>File.</i> В пункте File находятся команды, которые отвечают за работу с файлами рабочей папки. Через неё можно сохранять и открывать файлы, выбирать папки и выполнять другие действия.</p>
-        <p><i>Edit.</i> Через этот пункт можно работать с открытым файлом — отменять последние действия, производить поиск по файлу.
-        </p>
-        <p><i>Selection.</i> В пункте Selection можно найти команды для выделения нужного участка кода.</p>
-        <p><i>View.</i> Открывать различные приложения, встроенные в редактор кода, можно через пункт View. Здесь дублируются пункты активного меню, а ещё здесь можно открыть терминал, настроить элементы интерфейса и многое другое.
-        </p>
-        <p><i>Go.</i> В пункте File находятся команды, которые отвечают за работу с файлами рабочей папки. Через неё можно сохранять и открывать файлы, выбирать папки и выполнять другие действия.Через пункт Go можно перемещаться между открытыми файлами и по документу. Также можно разделять рабочую область на части. Это удобно для работы на большом мониторе — можно держать в одном месте разметку и файлы стилей.
-        </p>
-        <p><i>Debug.</i> Здесь собраны команды для отладки скриптов.</p>
-        <p><i>Terminal.</i> В редактор встроен терминал (он же командная строка). Он может выполнять как отдельные задачи, так и выводить командную строку в интерфейс редактора.
-        </p>
-        <p><i>Help.</i> В этом пункте собраны справочные материалы по работе редактора, его основным функциями и общая информация о программе.
-        </p>
-      </div>
-    </div>
-    <!-- Горячие клавиши -->
-    <div class="row">
-      <div class="col-12">
-        <h2>Горячие клавиши</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12">
-        <p>Программа дает возможность удобно писать программные коды, но в то же время у программиста уходит много времени на различные редактирования и исправления.</p>
-        <p>Visual Studio Code предоставляет широкие и простые возможности редактирования сочетаний клавиш с помощью редактора сочетаний клавиш. В нем перечислены все доступные команды с привязками клавиш и без них, и вы можете легко изменить / удалить / сбросить их привязки клавиш с помощью доступных действий. В верхней части также есть окно поиска, которое поможет вам найти команды или привязки клавиш. Вы можете открыть этот редактор, перейдя в меню "Файл"> "Настройки"> "Сочетания клавиш". (Код> Настройки> Сочетания клавиш в macOS).Самое главное, что вы можете видеть привязки клавиш в соответствии с раскладкой клавиатуры.</p>
-        <p>Так как существует огромное количество горячих клавиш, ниже мы разберем часто использующиеся горячие клавиши, которые сэкономят кучу вашего времени при написании программного кода.</p>
-        <h3>Быстро добавить/убрать комментарий</h3>
-        <p>Windows — <kbd>Cntr + /</kbd></p>
-        <p>macOS — <kbd>Cntr + /</kbd></p>
-        <p>Обычно чтобы добавить комментарий, нужно перейти в начало строки и дописать туда два слеша. Это медленно. Быстрее нажать в любом месте строки <kbd>Ctrl + /</kbd>, и строка закомментируется. А если строка уже закомментирована, то комментарий исчезнет.</p>
-        <h3>Перейти к строке под номером</h3>
-        <p>Windows — <kbd>Cntr + G</kbd></p>
-        <p>macOS — <kbd>Cntr + G</kbd></p>
-        <p>Иногда отладчики внезапно сообщают, что на строке 953 случилась  ошибка. Чтобы не искать вручную, не листать и не тратить на это время, нажмите <kbd>Ctrl + G</kbd>, введите номер строки и исправляйте ошибку.
-        <h3>Поиск</h3>
-        <p>Windows — <kbd>Cntr + F</kbd></p>
-        <p>macOS — <kbd>Cntr + F</kbd></p>
-        <p>Введите искомое — высветятся все найденные места. Остаётся перемещаться по ним (стрелочками в форме поиска).</p>
-        <h3>Поменять строку местами с соседними</h3>
-        <p>Windows — <kbd>Alt + ↑ / ↓</kbd></p>
-        <p>macOS — <kbd>Option + ↑ / ↓</kbd></p>
-        <p><kbd>Alt</kbd> и стрелки меняют текущую строку местами с соседними.</p>
-        <h3>Дублировать строку</h3>
-        <p>Windows — <kbd>Shift + Alt + ↓ / ↑</kbd></p>
-        <p>macOS — <kbd>Shift + Option + ↓ / ↑</kbd></p>
-        <p>Это для тех, кто не хочет копировать и вставлять несколько раз одно и то же.</p>
-        <h3>Перейти к парной скобке</h3>
-        <p>Windows — <kbd>Ctrl + Shift + \</kbd></p>
-        <p>macOS — <kbd>Shift + Command + \</kbd></p>
-        <p>Когда кода становится много, очень просто запутаться в закрывающих и открывающих скобках, непонятно, где какой блок. На помощь приходит <kbd>Ctrl + Shift + \</kbd> — это хорошее дополнение к стандартной подсветке парных скобок в VS Code.</p>
-        <p>Это для тех, кто не хочет копировать и вставлять несколько раз одно и то же.</p>
-        <h3>Переименовать переменную</h3>
-        <p>Windows — <kbd>F2</kbd></p>
-        <p>macOS — <kbd>F2</kbd></p>
-        <p>Клавиша <kbd>F2</kbd> позволяет переименовать все переменные с таким названием внутри блока, не внутри всего открытого файла.</p>
-        <h3>Отформатировать документ</h3>
-        <p>Windows — <kbd>Shift + Alt + F</kbd></p>
-        <p>macOS — <kbd>Shift + Option + F</kbd></p>
-        <p>VS Code красиво отформатирует документ — расставит по местам блоки, скобки, и сделает код более читаемым.</p>
-        <h3>Перейти к переменной</h3>
-        <p>Windows — <kbd>F12</kbd></p>
-        <p>macOS — <kbd>F12</kbd></p>
-        <p>Иногда нужно узнать, где была объявлена переменная, какая у неё область видимости. <kbd>F12</kbd> перенесёт нас к объявлению выделенной переменной, функции или метода. Если объявление в другом файле — всё равно перенесёт.</p>
-        <h3>Включить/выключить перенос слов</h3>
-        <p>Windows — <kbd>Alt + Z</kbd></p>
-        <p>macOS — <kbd>Option + Z</kbd></p>
-        <p>Если строки кода или текст не вмещается в редактор по ширине, включите перенос.</p>
-        <h3>Разделить рабочую область</h3>
-        <p>Windows — <kbd>Ctrl + Alt + →/←</kbd></p>
-        <p>macOS — <kbd>Ctrl + Alt + →/←</kbd></p>
-        <p><kbd>Ctrl + Alt + →</kbd> — разделить рабочую область и переместить актуальную вкладку вправо.<kbd>Ctrl + Alt + ←</kbd>  возвращает вкладку назад.
-        </p>
-        <h3>Мультикурсор</h3>
-        <p>Позволяет писать одинаковый код одновременно на нескольких строках.</p>
-        <h4>Чтобы размножить курсор:</h2>
-        <p>Зажмите <kbd>Alt</kbd> (в Windows) или <kbd>⌥Option</kbd> (в macOS) и кликайте левой кнопкой мышки там, куда нужно добавить курсор. Выделите несколько строк, зажав среднюю кнопку мыши. В каждой из выделенных строк появится по курсору. Если лень кликать мышкой, то дублировать курсор можно так: <kbd>Ctrl + Alt + ↑ / ↓</kbd> (Windows) или <kbd>⌥Option + ⌘Cmd + ↑ / ↓</kbd> (macOS).
-        </p>
-        <h3>Выделение целого слова</h3>
-        <p>Windows — <kbd>Ctrl + Shift + →/←</kbd></p>
-        <p>macOS — <kbd>Command + Shift + →/←</kbd></p>
-        <p>Помогает осуществить быстрое выделение и редактирование необходимых слов. Особенно поможет, когда в готовом коде нужно срочно сделать правку требуемых слов.
-      </div>
-    </div>
-    <div class="row mb-3">
-      <div class="col-12">
-        <h2>Преимущества</h2>
-      </div>
-    </div>
-    <div class="row align-items-center justify-content-center gy-3">
-      <div class="col-12 col-md-6 col-xl-4 block">Мультифункциональность</div>
-      <div class="col-12 col-md-6 col-xl-4 block">Простота и гибкость</div>
-      <div class="col-12 col-md-6 col-xl-4 block">Расширяемая библиотека дополнений и готовых решений</div>
-      <div class="col-12 col-md-6 col-xl-4 block">Большое количество настроек (как всей программы, так и интерфейса)</div>
-      <div class="col-12 col-md-6 col-xl-4 block">Удобное дерево проекта</div>
-      <div class="col-12 col-md-6 col-xl-4 block">Встроенный Git</div>
-    </div>
-    <div class="row">
-      <div class="col-12">
-        <h2>Недостатки</h2>
-      </div>
-    </div>
-    <div class="row align-items-center justify-content-center">
-      <div class="col-12 col-md-6 block">Недостаточно стабильный</div>
-      <div class="col-12 col-md-6 block">Низкая скорость запуска</div>
-    </div>
-  </div>
-</main>
-<footer>
-<div class="container">
-  <div class="row">
-    <div class="col-12">
-        <h5>&copy WebDev 2023</h5>
-      </div>
-    </div>
-  </div>
-</footer>
-    <script src="../js/bootstrap.bundle.min.js"></script>
+  </footer>
+  <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
