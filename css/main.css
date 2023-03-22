@@ -130,6 +130,10 @@ body .main .block {
   padding: 10px;
   height: auto;
   font-size: 20px;
+  transition: 1s;
+}
+body .main .block:hover {
+  background-color: #263173;
 }
 body .main li {
   font-size: 25px;
@@ -143,6 +147,30 @@ body .main code {
   padding: 10px;
   white-space: pre;
   overflow-x: scroll;
+}
+body .main table {
+  border: 1px solid white;
+  width: 1000px;
+  margin: 0 auto;
+  background-color: #213FA8;
+}
+body .main table caption {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+body .main table th {
+  text-align: center;
+  border: 1px solid white;
+}
+body .main table tr {
+  font-size: 20px;
+  border: 1px solid white;
+}
+body .main table tr td {
+  padding: 5px;
+  word-wrap: break-word;
+  border: 1px solid white;
 }
 body footer {
   background-color: #263173;

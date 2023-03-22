@@ -7,6 +7,7 @@ $blue:#2da9c5;
 $white:white;
 $Roboto: 'Roboto',sans-serif;
 $Roboto-bold: 'Roboto-bold',sans-serif;
+$border-table:1px solid $white;
 
 @font-face {
     font-family: "Roboto";
@@ -159,6 +160,11 @@ body{
                 padding: 10px;
                 height: auto;
                 font-size: 20px;
+                transition: 1s;
+
+                &:hover{
+                    background-color: $header;
+                }
             }
             
             li{
@@ -175,7 +181,38 @@ body{
                     padding: 10px;
                     white-space: pre;
                     overflow-x: scroll;
-                }    
+                }  
+                
+            table {
+                border: $border-table;
+                width: 1000px;
+                margin: 0 auto;
+                background-color: #213FA8;
+
+                caption{
+                    font-size: 30px;
+                    color: $white;
+                    text-align: center;
+                }
+
+                th{
+                    text-align: center;
+                    border: $border-table;
+                }
+                
+                tr{
+                    font-size: 20px;
+                    border: $border-table;
+
+                    td{
+                        
+                        padding: 5px;
+                        word-wrap: break-word;
+                        border: $border-table;
+                    }
+                }
+            }
+            
         }
 
         footer{
