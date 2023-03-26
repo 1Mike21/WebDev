@@ -16,6 +16,10 @@ body {
 }
 body .header {
   background: #263173;
+  --bs-navbar-toggler-icon-bg: url(../img/menu.jpg);
+}
+body .header .navbar-toggler {
+  background-color: #49A68B;
 }
 body .header .menu {
   background-color: #263173;
@@ -29,8 +33,6 @@ body .header .menu h5 {
 body .header .btn-close {
   width: 30px;
   height: 30px;
-}
-body .header .btn-close:hover {
   background-color: white;
 }
 body .accordion {
@@ -106,6 +108,18 @@ body .main a {
 body .main a:hover {
   background-color: #49A68B;
   color: #263173;
+}
+body .main #btn_practice {
+  background-color: #1D906E;
+  text-decoration: none;
+  padding: 30px 200px;
+  border-radius: 50px;
+  font-weight: 600;
+  margin-left: 50px;
+  text-align: center;
+}
+body .main #btn_practice:hover {
+  background-color: #49A68B;
 }
 body .main img {
   margin: 10px auto;

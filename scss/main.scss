@@ -29,6 +29,12 @@ body{
 
     .header{
         background: $header;
+        --bs-navbar-toggler-icon-bg: url(../img/menu.jpg);
+
+        .navbar-toggler{
+            background-color: $green;
+            
+        }
 
         .menu{
             background-color: $header;
@@ -45,9 +51,7 @@ body{
             .btn-close{
                 width: 30px;
                 height: 30px;
-                &:hover{
-                    background-color: $white;
-                }
+                background-color: $white;
             }
         }
     
@@ -115,6 +119,7 @@ body{
             margin-top: 135px;
             text-align: justify;
 
+            
             p{
                 font-size: 25px;
                 margin: 0;
@@ -128,19 +133,34 @@ body{
                 text-decoration: none;
                 color:$white;
                 border-radius: 5px;
-
+                
                 &:hover{
                     background-color: $green;
                     color: $header;
                 }
             }
+
+            #btn_practice{
+                background-color: $button;
+                text-decoration: none;
+                padding: 30px 200px;
+                border-radius: 50px;
+                font-weight: 600;
+                margin-left: 50px;
+                text-align: center;
+
+                &:hover{
+                    background-color: $green;
+                }
+            }
+
             img{
                 margin: 10px auto;
                 display: block;
                 width: 1200px;
 
             }
-            
+
             .git{
                 width: 400px;
             }
