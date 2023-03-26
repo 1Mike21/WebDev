@@ -152,23 +152,23 @@
         <h2>Преимущества</h2>
       </div>
     </div>
-    <div class="row">
-      <div class="col-12 col-md-6 col-xl-4">Хорошо подходят для больших проектов</div>
-      <div class="col-12 col-md-6 col-xl-4">Сильно расширяют возможности обычного CSS</div>
-      <div class="col-12 col-md-6 col-xl-4">Упрощают работу с однотипным кодом</div>
-      <div class="col-12 col-md-6 col-xl-4">Проще вносить изменения и поддерживать код в актуальном состоянии</div>
-      <div class="col-12 col-md-6 col-xl-4">Сразу видна логическая структура CSS, легко разобраться в том, из чего состоит каждый элемент</div>
+    <div class="row align-items-center justify-content-center gy-3">
+      <div class="col-12 col-md-6 block">Хорошо подходят для больших проектов</div>
+      <div class="col-12 col-md-6 block">Сильно расширяют возможности обычного CSS</div>
+      <div class="col-12 col-md-6 block">Упрощают работу с однотипным кодом</div>
+      <div class="col-12 col-md-6 block">Проще вносить изменения и поддерживать код в актуальном состоянии</div>
+      <div class="col-12 col-md-6 block">Сразу видна логическая структура CSS, легко разобраться в том, из чего состоит каждый элемент</div>
     </div>
     <div class="row">
       <div class="col-12">
         <h2>Недостатки</h2>
       </div>
     </div>
-    <div class="row">
-      <div class="col-12 col-md-6">Нет смысла использовать в маленьких проектах и простых страницах</div>
-      <div class="col-12 col-md-6">На выходе препроцессора получается CSS-код, который сложно прочитать человеку</div>
-      <div class="col-12 col-md-6">Нужно изучать что-то кроме самого CSS</div>
-      <div class="col-12 col-md-6">У каждого препроцессора свой синтаксис, и не получится быстро перейти от одного к другому</div>
+    <div class="row align-items-center justify-content-center">
+      <div class="col-12 col-md-6 block">Нет смысла использовать в маленьких проектах и простых страницах</div>
+      <div class="col-12 col-md-6 block">На выходе препроцессора получается CSS-код, который сложно прочитать человеку</div>
+      <div class="col-12 col-md-6 block">Нужно изучать что-то кроме самого CSS</div>
+      <div class="col-12 col-md-6 block">У каждого препроцессора свой синтаксис, и не получится быстро перейти от одного к другому</div>
     </div>
     <div class="row">
       <div class="col-12">
@@ -180,7 +180,7 @@
         <p>Koala — это кроссплатформенная программа для компиляции Less, Sass, Compass и CoffeeScript, помогающее веб-разработчикам использовать их более эффективно. Работает на Win, Mac OS и Linux.</p>
         <p>Koala хорошо подходит для начинающих разработчиков или тех, кто делает небольшой проект и не хочет разворачивать полную версию Gulp или Grunt.</p>
         <a href="http://koala-app.com">Скачивайте программу с официального сайта разработчиков</a><br>
-        <img src="../img/koala/Koala.png" alt="Koala">
+        <img class="img-fluid" src="../img/koala/Koala.png" alt="Koala">
       </div>
     </div>
     <div class="row">
@@ -190,7 +190,7 @@
     </div>
     <div class="row">
       <div class="col-12">
-        <img src="../img/koala/interface.png" alt="Интерфейс">
+        <img class="img-fluid" src="../img/koala/interface.png" alt="Интерфейс">
       </div>
     </div>
     <div class="row">
@@ -201,20 +201,17 @@
     <div class="row">
       <div class="col-12">
         <p>Посмотрим на вкладку с настройками SASS. За пару кликоы Koala начнет отслеживать SASS-файлы и автоматически компилировать их в CSS, никаких дополнительных действий не требуется.</p>
-        <img src="../img/koala/settings.png" alt="Настройки 1">
+        <img class="img-fluid" src="../img/koala/settings.png" alt="Настройки 1">
         <p>В типе файла CSS рекомендуется выбирать compressed, так его вес будет минимальным, а для удобства разработки оставлять включенными Source maps.</p>
         <p>Autoprefix — это автоматическое добавление префиксов для поддержки свойств CSS3 в браузерах устаревших версий. Например, для закругления углков достаточно написать:</p>
-        <code>
-          border-radius: 3px;
-        </code>
+<code>border-radius: 3px;</code>
         <p>В итоге после префикса получите:</p>
-        <code>
-          -webkit-border-radius: 3px;<br>
-          -moz-border-radius: 3px;<br>
-          border-radius: 3px;<br>
-        </code>
+<code>-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+</code>
         <p>Кроме того, настройки для каждого типа файлов доступны в панели справа. Для этого выберите файл в списке и в правой части откроются настройки для файлов этого типа.</p>
-        <img src="../img/koala/settings.png" alt="Настройки 2">
+        <img class="img-fluid" src="../img/koala/settings.png" alt="Настройки 2">
       </div>
     </div>
     <div class="row">
@@ -237,13 +234,13 @@
         <h2>Преимущества</h2>
       </div>
     </div>
-    <div class="row">
-      <div class="col-12 col-md-6 col-xl-4">Поддержка нескольких языков</div>
-      <div class="col-12 col-md-6 col-xl-4">Компиляция в реальном времени</div>
-      <div class="col-12 col-md-6 col-xl-4">Компрессия</div>
-      <div class="col-12 col-md-6 col-xl-4">Уведомления об ошибках</div>
-      <div class="col-12 col-md-6 col-xl-4">Настройка компиляции</div>
-      <div class="col-12 col-md-6 col-xl-4">Кроссплатформенность</div>
+    <div class="row align-items-center justify-content-center gy-3">
+      <div class="col-12 col-md-6 col-xl-4 block">Поддержка нескольких языков</div>
+      <div class="col-12 col-md-6 col-xl-4 block">Компиляция в реальном времени</div>
+      <div class="col-12 col-md-6 col-xl-4 block">Компрессия</div>
+      <div class="col-12 col-md-6 col-xl-4 block">Уведомления об ошибках</div>
+      <div class="col-12 col-md-6 col-xl-4 block">Настройка компиляции</div>
+      <div class="col-12 col-md-6 col-xl-4 block">Кроссплатформенность</div>
     </div>
   </div>
 </main>

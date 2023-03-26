@@ -9,104 +9,104 @@
     <title>Инструменты для веб-разработки</title>
 </head>
 <body>
-    <!-- Шапка сайта -->
-    <header>
-        <nav class="navbar bg-body-tertiary fixed-top">
-            <div class="container-fluid">
-                <a href="../index.html"><img src="../img/logo.svg" alt="WebDev"></a>
-                <h1 id="header">Главная</h1>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Меню</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <!-- Аккордеон -->
-              <div class="accordion" id="accordionExample">
-                <!-- Visual Studio Code -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Visual Studio Code
-                    </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <ul>
-                        <li><a href="../VS code/vscode.html">О программе</a></li>
-                        <li><a href="../VS code/git.html">Git</a></li>
-                        <li><a href="../VS code/plugins.html">Плагины</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <!-- Frontend -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Frontend
-                    </button>
-                  </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <ul>
-                        <li><a href="../Frontend/jquery.html">jQuery</a></li>
-                        <li><a href="../Frontend/react.html">React.js</a></li>
-                        <li><a href="../Frontend/vue.html">Vue.js</a></li>
-                        <li><a href="../Frontend/angular.html">Angular</a></li>
-                        <li><a href="../Frontend/preprocessors.html">Препроцессоры</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <!-- Backend -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      Backend
-                    </button>
-                  </h2>
-                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <ul>
-                        <li><a href="ospanel.html">Open Server Panel</a></li>
-                        <li><a href="laravel.html">Laravel</a></li>
-                        <li><a href="django.html">Django</a></li>
-                        <li><a href="#">Node.js</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <!-- Практические задания -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="panelsStayOpenheadingFour">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
-                      Практические задания
-                    </button>
-                  </h2>
-                  <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
-                    <div class="accordion-body">
-                      <ul>
-                        <li><a href="../practice.html">Практика</a></li>
-                      </ul>
-                    </div>
-                  </div>
+  <!-- Шапка сайта -->
+  <header>
+    <nav class="navbar header fixed-top">
+        <div class="container-fluid">
+            <a href="../index.html"><img class="img-fluid" src="../img/logo.svg" alt="WebDev"></a>
+            <h1 id="header">Node.js</h1>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas menu offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Меню</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <!-- Аккордеон -->
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <!-- Visual Studio Code -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  Visual Studio Code
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body">
+                  <ul>
+                    <li><a href="../VS code/vscode.html">О программе</a></li>
+                    <li><a href="../VS code/git.html">Git</a></li>
+                    <li><a href="../VS code/plugins.html">Плагины</a></li>
+                  </ul>
                 </div>
               </div>
             </div>
+            <!-- Frontend -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpenheadingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                  Frontend
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                <div class="accordion-body">
+                  <ul>
+                    <li><a href="../Frontend/jquery.html">jQuery</a></li>
+                    <li><a href="../Frontend/react.html">React.js</a></li>
+                    <li><a href="../Frontend/vue.html">Vue.js</a></li>
+                    <li><a href="../Frontend/angular.html">Angular</a></li>
+                    <li><a href="../Frontend/preprocessors.html">Препроцессоры</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Backend -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpenheadingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                  Backend
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                <div class="accordion-body">
+                  <ul>
+                    <li><a href="ospanel.html">Open Server Panel</a></li>
+                    <li><a href="laravel.html">Laravel</a></li>
+                    <li><a href="django.html">Django</a></li>
+                    <li><a href="#">Node.js</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Практические задания -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpenheadingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                  Практические задания
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                <div class="accordion-body">
+                  <ul>
+                    <li><a href="../practice.html">Практика</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        </div>
-    </nav>
-    </header>
+    </div>
+    </div>
+</nav>
+</header>
     <main>
-      <div class="container">
+      <div class="container main">
         <div class="row">
         <div class="col-12">
           <h2>Что такое Node.js</h2>
-          <img src="../img/Backend/nodejs.jpg" alt="">
+          <img class="img-fluid" src="../img/Backend/nodejs.jpg" alt="">
         </div>
       </div>
       <div class="row">
@@ -174,26 +174,26 @@
           <h2>Преимущества</h2>
         </div>
       </div>
-      <div class="row">
-        <div class="col-12 col-md-6">Удобство для построения быстрых приложений</div>
-        <div class="col-12 col-md-6">Высокая пропускная способность</div>
-        <div class="col-12 col-md-6">Легкость и скорость написания</div>
-        <div class="col-12 col-md-6">Активно развивается</div>
-        <div class="col-12 col-md-6">Простота</div>
-        <div class="col-12 col-md-6">Гибкость</div>
-        <div class="col-12 col-md-6">Быстрота</div>
-        <div class="col-12 col-md-6">Ресурсоемкость</div>
+      <div class="row align-items-center justify-content-center gy-3">
+        <div class="col-12 col-md-6 col-xl-4 block">Быстрое построение приложений</div>
+        <div class="col-12 col-md-6 col-xl-4 block">Высокая пропускная способность</div>
+        <div class="col-12 col-md-6 col-xl-4 block">Легкость и скорость написания</div>
+        <div class="col-12 col-md-6 col-xl-4 block">Активно развивается</div>
+        <div class="col-12 col-md-6 col-xl-4 block">Простота</div>
+        <div class="col-12 col-md-6 col-xl-4 block">Гибкость</div>
+        <div class="col-12 col-md-6 col-xl-4 block">Быстрота</div>
+        <div class="col-12 col-md-6 col-xl-4 block">Ресурсоемкость</div>
       </div>
       <div class="row">
         <div class="col-12">
           <h2>Недостатки</h2>
         </div>
       </div>
-      <div class="row">
-        <div class="col-12 col-md-4 col-xl-6">Небольшие ограничения в области нагрузки на CPU</div>
-        <div class="col-12 col-md-4 col-xl-6">Плохо выполняет операции генерирования графики и обработки изображений</div>
-        <div class="col-12 col-md-4 col-xl-6">Необходимо постоянно следить за обновлениями</div>
-        <div class="col-12 col-md-4 col-xl-6">Некачественно протестирован</div>
+      <div class="row align-items-center justify-content-center">
+        <div class="col-12 col-md-6 block">Небольшие ограничения в области нагрузки на CPU</div>
+        <div class="col-12 col-md-6 block">Плохо выполняет операции генерирования графики и обработки изображений</div>
+        <div class="col-12 col-md-6 block">Необходимо постоянно следить за обновлениями</div>
+        <div class="col-12 col-md-6 block">Некачественно протестирован</div>
       </div>
     </div>
   </main>
