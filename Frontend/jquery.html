@@ -13,7 +13,7 @@
     <header>
       <nav class="navbar header fixed-top">
           <div class="container-fluid">
-              <a href="../index.html"><img src="../img/logo.svg" alt="WebDev"></a>
+              <a href="../index.html"><img class="img-fluid" src="../img/logo.svg" alt="WebDev"></a>
               <h1 id="header">jQuery</h1>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
@@ -125,15 +125,12 @@
             <p>Подключение jQuery к странице осуществляется также как и любого другого JavaScript файла. Т.е. посредством добавления в HTML тега &lt;script&gt; с атрибутом src, в котором необходимо задать полный или относительный путь к файлу.<br>
             Подключение последней версии jQuery:
             </p>
-<code>
-&lt;script src="/assets/js/jquery-3.5.1.min.js"&gt;&lt;/script&gt;
-</code>
+<code>&lt;script src="/assets/js/jquery-3.5.1.min.js"&gt;&lt;/script&gt;</code>
             <p>
               При этом разместить &lt;script&gt; можно как секции в &lt;head&gt;, так и в &lt;body&gt;. Но где же лучше? <br>
               Раньше (до появления режимов async и defer) это рекомендовалось делать перед закрывающим тегом body: 
             </p>
-<code>
-... 
+<code>... 
 &lt;script src="/assets/js/jquery-3.5.1.min.js"&gt;&lt;/script&gt;
 &lt;/body&gt; 
 &lt;/html&gt;               
@@ -142,8 +139,7 @@
             </p>
             <p>Если бы мы сделали это по-другому, например, поместили script в раздел head, то создали бы «задержку» при обработке страницы в самом её начале. А это привело бы к тому, что пользователю пришлось бы дольше ждать отображения контента страницы.</p>
             <p>Но сейчас так делать не рекомендуется. Лучше размещать скрипты как можно выше (в разделе &lt;head&gt;) с добавлением к ним атрибута defer или async. Эти атрибуты будут сообщать браузеру, что скрипт нужно загрузить в фоне, не останавливая при этом основной поток обработки страницы. Это позволит сделать сайт более производительным.</p>
-<code>
-...
+<code>...
 &lt;-- отложенная загрузка библиотеки jQuery --&gt;
 &lt;script defer src="/assets/js/jquery-3.5.1.min.js"&gt;&lt;/script&gt;
 ...
@@ -153,16 +149,13 @@
             <p>Использовать атрибут async применительно к jQuery не имеет смысла, т.к. эту библиотеку мы в основном используем для изменения DOM. Но перед тем, как править DOM, он должен быть построен. Это сделать нам поможет использование атрибута defer. Атрибут defer гарантирует что скрипт выполниться только после того, как дерево DOM будет построено, но до события DOMContentLoaded.</p>
             <p>При этом, если на странице имеется несколько внешних скриптов с атрибутом defer, то они будут выполняться строго в том порядке, в котором они расположены в коде. <br>
             Пример отложенного подключения jQuery и своего внешнего скрипта, зависящего от этой библиотеки:</p>
-<code>
-&lt;!-- сначала выполнится jQuery --&gt; 
+<code>&lt;!-- сначала выполнится jQuery --&gt; 
 &lt;script defer src="/assets/js/jquery-3.5.1.min.js"&gt;&lt;/script&gt; 
 &lt;!-- после jQuery свой скрипт, зависящий от jQuery --&gt; 
 &lt;script defer src="/assets/js/main.min.js"&gt;&lt;/script&gt; 
 </code>
-
             <p>При непосредственном размещении JavaScript кода в HTML документе его необходимо поместить в обработчик события DOMContentLoaded (в этом случае его код выполнится после загрузки библиотеки jQuery):</p>
-<code>
-&lt;script&gt; 
+<code>&lt;script&gt; 
 document.addEventListener('DOMContentLoaded', function() {   
   // код, зависящий от jQuery 
 ...  
@@ -187,10 +180,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <p>Подключить jQuery с CDN очень просто. Для этого нужно вставить script с атрибутом src, в котором нужно прописать путь до этой библиотеки. <br>
               jQuery CDN:
             </p>
-<code>
-&lt;script src="https://code.jquery.com/jquery-3.5.1.min.js"&gt;&lt;/script&gt;                
-</code>
-
+<code>&lt;script src="https://code.jquery.com/jquery-3.5.1.min.js"&gt;&lt;/script&gt;</code>
             <p>Дополнительно можно отметить, что если множество сайтов используют один и тот-же URL для подключения jQuery с CDN, то браузеру не потребуется загружать его для каждого такого ресурса. После первого скачивания он поместить jQuery в кэш и при последующих запросах будет брать её уже оттуда.</p>
           </div>
         </div>
@@ -202,8 +192,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class="row">
           <div class="col-12">
             <p>Использование jQuery рассмотрим на простом HTML5 документе. Для этого мы его создадим, подключим к нему эту библиотеку с помощью Google CDN, и произведём с помощью неё ряд изменений на странице. А именно, изменим цвет фона body на #eee, выровняем h1 по центру и добавим в конец страницы элемент div с контентом «Я люблю jQuery».</p>
-<code>
-&lt;!doctype html&gt;
+<code>&lt;!doctype html&gt;
 &lt;html lang="ru"&gt;
 &lt;head&gt;
 &lt;meta charset="UTF-8"&gt;

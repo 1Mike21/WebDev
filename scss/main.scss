@@ -24,7 +24,6 @@ $border-table:1px solid $white;
 
 body{
     background: $background fixed center;
-    height: 50vh;
     color: $white;
     font-family: $Roboto;
 
@@ -139,8 +138,13 @@ body{
                 margin: 10px auto;
                 display: block;
                 width: 1200px;
+
             }
-    
+            
+            .git{
+                width: 400px;
+            }
+            
             h2,h3,h4{
                 margin: 20px 0;
                 text-align: center;
