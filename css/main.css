@@ -51,6 +51,7 @@ body .accordion .accordion-button {
   padding-left: 10px;
   height: 100px;
   width: 300px;
+  font-size: 27px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 10px 16px rgba(0, 0, 0, 0.2);
 }
 body .accordion .accordion-body {
@@ -59,6 +60,7 @@ body .accordion .accordion-body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 10px 16px rgba(0, 0, 0, 0.2);
 }
 body .accordion .accordion-body ul {
+  font-size: 30px;
   padding-left: 0;
 }
 body .accordion .accordion-body ul li {
@@ -93,14 +95,18 @@ body .main {
   text-align: justify;
 }
 body .main p {
-  font-size: 25px;
+  font-size: 40px;
   margin: 0;
   text-indent: 25px;
 }
+body .main p span {
+  color: orangered;
+}
 body .main a {
+  font-size: 20px;
   line-height: 80px;
   background-color: #1D906E;
-  padding: 10px;
+  padding: 25px;
   text-decoration: none;
   color: white;
   border-radius: 5px;
@@ -112,10 +118,10 @@ body .main a:hover {
 body .main #btn_practice {
   background-color: #1D906E;
   text-decoration: none;
-  padding: 30px 200px;
+  padding: 30px 100px;
   border-radius: 50px;
   font-weight: 600;
-  margin-left: 50px;
+  margin-left: 130px;
   text-align: center;
 }
 body .main #btn_practice:hover {
@@ -132,6 +138,7 @@ body .main .git {
 body .main h2, body .main h3, body .main h4 {
   margin: 20px 0;
   text-align: center;
+  font-size: 45px;
 }
 body .main .carousel-inner {
   margin-bottom: 10px;
