@@ -51,7 +51,6 @@ body .accordion .accordion-button {
   padding-left: 10px;
   height: 100px;
   width: 300px;
-  font-size: 27px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 10px 16px rgba(0, 0, 0, 0.2);
 }
 body .accordion .accordion-body {
@@ -60,7 +59,6 @@ body .accordion .accordion-body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 10px 16px rgba(0, 0, 0, 0.2);
 }
 body .accordion .accordion-body ul {
-  font-size: 30px;
   padding-left: 0;
 }
 body .accordion .accordion-body ul li {
@@ -95,7 +93,7 @@ body .main {
   text-align: justify;
 }
 body .main p {
-  font-size: 40px;
+  font-size: 25px;
   margin: 0;
   text-indent: 25px;
 }
@@ -106,7 +104,7 @@ body .main a {
   font-size: 20px;
   line-height: 80px;
   background-color: #1D906E;
-  padding: 25px;
+  padding: 10px;
   text-decoration: none;
   color: white;
   border-radius: 5px;
@@ -118,10 +116,8 @@ body .main a:hover {
 body .main #btn_practice {
   background-color: #1D906E;
   text-decoration: none;
-  padding: 30px 100px;
   border-radius: 50px;
   font-weight: 600;
-  margin-left: 130px;
   text-align: center;
 }
 body .main #btn_practice:hover {
@@ -172,9 +168,10 @@ body .main code {
 }
 body .main table {
   border: 1px solid white;
-  width: 1000px;
+  min-width: 300px;
   margin: 0 auto;
   background-color: #213FA8;
+  overflow-x: scroll;
 }
 body .main table caption {
   font-size: 30px;
