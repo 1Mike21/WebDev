@@ -89,7 +89,7 @@ body .accordion .accordion-body ul li a::before {
   height: 100%;
 }
 body .main {
-  margin-top: 135px;
+  margin-top: 100px;
   text-align: justify;
 }
 body .main p {
@@ -126,7 +126,7 @@ body .main #btn_practice:hover {
 body .main img {
   margin: 10px auto;
   display: block;
-  width: 1200px;
+  width: 1000px;
 }
 body .main .git {
   width: 400px;
